@@ -1,9 +1,28 @@
-import { Container, Box, Heading, Image } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import {
+    Button,
+    Container,
+    Box,
+    Heading,
+    Image,
+    Link,
+    useColorModeValue
+} from '@chakra-ui/react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
     return (
         <Container>
-            <Box borderRadius="lg" bg="red" p={3} mb={6} align="center">
+            <Box
+                borderRadius="lg"
+                bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+                p={3}
+                mb={6}
+                align="center"
+            >
                 Hello I&apos;m afkdev8!
             </Box>
 
@@ -27,6 +46,63 @@ const Page = () => {
                     />
                 </Box>
             </Box>
+
+            <Section delay={0.1}>
+                <Heading as="h3" variant="section-title">
+                    Work
+                </Heading>
+                <Paragraph>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                    no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    <br></br>
+                    LINKS: {' '}
+                    <NextLink href="/works/work1">
+                        <Link>
+                            Work1
+                        </Link>
+                    </NextLink>
+                </Paragraph>
+                <Box align="center" my={4}>
+                    <NextLink href="/works">
+                        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                            My portfolio
+                        </Button>
+                    </NextLink>
+                </Box>
+            </Section>
+
+            <Section delay={0.2}>
+                <Heading as="h3" variant="section-title">
+                    Bio
+                </Heading>
+                <BioSection>
+                    <BioYear>19xx</BioYear>
+                    Born in ?, Europe.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2022</BioYear>
+                    Created this website.
+                </BioSection>
+            </Section>
+
+            <Section delay={0.3}>
+                <Heading as="h3" variant="section-title">
+                    ♡
+                </Heading>
+                <Paragraph>
+                    Ghibli,{' '}
+                    <Link href="https://www.youtube.com/watch?v=TKy0Lyl4g-s">
+                        Music
+                    </Link>
+                    , 1984, ...
+                </Paragraph>
+            </Section>
         </Container>
     )
 }
