@@ -62,9 +62,9 @@ const Page = () => {
                     no sea takimata sanctus est Lorem ipsum dolor sit amet.
                     <br></br>
                     LINKS: {' '}
-                    <NextLink href="/works/work1">
+                    <NextLink href="/works/stayAtHome">
                         <Link>
-                            Work1
+                            StayAtHome
                         </Link>
                     </NextLink>
                 </Paragraph>
