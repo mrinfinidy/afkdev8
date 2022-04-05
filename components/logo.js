@@ -1,4 +1,4 @@
-import link from 'next/link'
+import Link from 'next/link'
 import Image from 'next/image'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
@@ -21,7 +21,7 @@ const Logo = () => {
     const navbarImg = `/images/navbarImg${useColorModeValue('', '-dark')}.png`
 
     return (
-        <Link href="/">
+        <Link href="/" scroll={false}>
             <a>
                 <LogoBox>
                     <Image src={navbarImg} width={20} height={20} alt="logo" />
