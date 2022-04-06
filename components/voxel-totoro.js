@@ -121,8 +121,8 @@ const VoxelTotoro = () => {
             ref={refContainer}
             className='voxel-totoro'
             m="auto"
-            at={['-20px', '-60px', '-120px']}
-            mb={['-40px', '-140px', '-200px']}
+            mt={['-10px', '-60px', '-60px']}
+            mb={['-40px', '-140px', '-250px']}
             w={[280, 480, 640]}
             h={[280, 480, 640]}
             position="relative"
