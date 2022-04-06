@@ -6,6 +6,9 @@ import {
     Heading,
     Image,
     Link,
+    SimpleGrid,
+    List,
+    ListItem,
     useColorModeValue
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -13,6 +16,10 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
+import { GridItem } from '../components/grid-item'
+import {
+    IoLogoGithub
+} from 'react-icons/io5'
 
 const Page = () => {
     return (
@@ -104,6 +111,33 @@ const Page = () => {
                         </Link>
                         , 1984, ...
                     </Paragraph>
+                </Section>
+
+                <Section delay={0.3}>
+                    <Heading as="h3" variant="section-title">
+                        On the Web
+                    </Heading>
+                    <List>
+                        <ListItem>
+                            <Link href="https://github.com/mrinfinidy/" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<IoLogoGithub />}
+                                >
+                                    afkdev8 (mr.infinidy)
+                                </Button>
+                            </Link>
+                        </ListItem>
+                    </List>
+
+                    <Box align="center" my={4}>
+                        <NextLink href="/posts" scroll={false}>
+                            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                                Posts
+                            </Button>
+                        </NextLink>
+                    </Box>
                 </Section>
             </Container>
         </Layout>

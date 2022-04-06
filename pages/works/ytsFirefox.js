@@ -18,7 +18,10 @@ const Work = () => {
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
-                        <Link href="https://addons.mozilla.org/en-US/firefox/addon/youtube-quick-search/">
+                        <Link
+                            href="https://addons.mozilla.org/en-US/firefox/addon/youtube-quick-search/"
+                            target="_blank"
+                        >
                             Install from Firefox add-on store <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
@@ -28,7 +31,7 @@ const Work = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>Source</Meta>
-                        <Link href="https://github.com/mrinfinidy/YTSearchFirefox">
+                        <Link href="https://github.com/mrinfinidy/YTSearchFirefox" target="_blank">
                             Source code <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>

@@ -18,7 +18,10 @@ const Work = () => {
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
-                        <Link href="https://chrome.google.com/webstore/detail/youtube-quick-search/algmmcbdjmplgjmligafamelebkahfhh?hl=en">
+                        <Link
+                            href="https://chrome.google.com/webstore/detail/youtube-quick-search/algmmcbdjmplgjmligafamelebkahfhh?hl=en"
+                            target="_blank"
+                        >
                             Install from Chrome web store <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
@@ -28,7 +31,7 @@ const Work = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>Source</Meta>
-                        <Link href="https://github.com/mrinfinidy/YouTubeSearch">
+                        <Link href="https://github.com/mrinfinidy/YouTubeSearch" target="_blank">
                             Source code <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
