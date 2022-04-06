@@ -34,7 +34,7 @@ const Works = () => {
                         </WorkGridItem>
                     </Section>
                     <Section delay={0.1}>
-                        <WorkGridItem id="autofocusYT" title="YouTube Autofocus" thumbnail={thumbAutoFocus}>
+                        <WorkGridItem id="ytAutofocus" title="YouTube Autofocus" thumbnail={thumbAutoFocus}>
                             A Firefox add-on that automatically focus the YouTube search bar.
                         </WorkGridItem>
                     </Section>

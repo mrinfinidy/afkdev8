@@ -9,32 +9,31 @@ const Work = () => {
         <Layout title="">
             <Container>
                 <Title>
-                    YouTube Quick Search Chrome <Badge>2020-</Badge>
+                    YouTube Quick Search Firefox <Badge>2021-</Badge>
                 </Title>
                 <P>
-                    A Chrome extension that lets you search highlighted text directly
+                    A Firefox add-on that lets you search highlighted text directly
                     on YouTube by right clicking it and selecting 'Search on YouTube'.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
-                        <Link href="https://chrome.google.com/webstore/detail/youtube-quick-search/algmmcbdjmplgjmligafamelebkahfhh?hl=en">
-                            Install from Chrome web store <ExternalLinkIcon mx="2px" />
+                        <Link href="https://addons.mozilla.org/en-US/firefox/addon/youtube-quick-search/">
+                            Install from Firefox add-on store <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Platform</Meta>
-                        <span>Chrome browser</span>
+                        <span>Firefox browser</span>
                     </ListItem>
                     <ListItem>
                         <Meta>Source</Meta>
-                        <Link href="https://github.com/mrinfinidy/YouTubeSearch">
+                        <Link href="https://github.com/mrinfinidy/YTSearchFirefox">
                             Source code <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
                 </List>
 
-                <WorkImage src="/images/works/ytsChrome_ss.jpg" alt="ytsChrome" />
             </Container>
         </Layout>
     )
