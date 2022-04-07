@@ -53,7 +53,7 @@ const VoxelTotoro = () => {
 
             // 640 -> 240
             //8 -> 6
-            const scale = scH * 0.04 + 4.8
+            const scale = scH * 0.04 + 11
             const camera = new THREE.OrthographicCamera(
                 -scale,
                 scale,
@@ -121,7 +121,7 @@ const VoxelTotoro = () => {
             ref={refContainer}
             className='voxel-totoro'
             m="auto"
-            mt={['-10px', '-60px', '-60px']}
+            mt={['-10px', '-60px', '-100px']}
             mb={['-40px', '-140px', '-250px']}
             w={[280, 480, 640]}
             h={[280, 480, 640]}
