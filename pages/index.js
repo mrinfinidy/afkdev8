@@ -104,7 +104,7 @@ const Page = () => {
                     </Heading>
                     <Paragraph>
                         Ghibli,{' '}
-                        <Link href="https://www.youtube.com/watch?v=TKy0Lyl4g-s">
+                        <Link href="https://www.youtube.com/watch?v=TKy0Lyl4g-s" target="_blank">
                             Music
                         </Link>
                         , 1984, ...
