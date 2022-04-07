@@ -13,7 +13,7 @@ const Work = () => {
                 </Title>
                 <P>
                     A Chrome extension that lets you search highlighted text directly
-                    on YouTube by right clicking it and selecting 'Search on YouTube'.
+                    on YouTube by right clicking it and selecting &apos;Search on YouTube&apos;.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>

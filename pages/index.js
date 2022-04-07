@@ -6,7 +6,6 @@ import {
     Heading,
     Image,
     Link,
-    SimpleGrid,
     List,
     ListItem,
     useColorModeValue
@@ -16,7 +15,6 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
-import { GridItem } from '../components/grid-item'
 import {
     IoLogoGithub
 } from 'react-icons/io5'
