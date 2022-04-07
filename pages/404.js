@@ -8,7 +8,9 @@ const NotFound = () => {
                 Not Found
             </Heading>
             <Text>
-                The page you&apos;re looking for was not found
+                The page you&apos;re looking for was not found.
+                <br></br>
+                It&apos;s probably yet to be implemented.
             </Text>
             <Divider my={6} />
 
