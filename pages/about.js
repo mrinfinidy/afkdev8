@@ -27,15 +27,28 @@ const About = () => (
                     template to create this website.
                 </BulletSection>
                 <BulletSection>
-                    <BulletPoint>Jesse Ragos</BulletPoint>
+                    <BulletPoint>
+                        <NextLink href="https://www.cgtrader.com/jkielr" passHref={true}>
+                            <Link target="_blank">
+                                Jesse Ragos
+                            </Link>
+                        </NextLink>
+                    </BulletPoint>
                     Thank you for your cute Totoro 3d model.
                 </BulletSection>
             </Section>
 
             <Section delay={0.2}>
                 <Heading as="h3" fontSize={20} mb={4}>
-                    View Source <ExternalLinkIcon mx="2px"/>
+                    View Source
                 </Heading>
+                <Paragraph>
+                    <NextLink href="https://github.com/mrinfinidy/afkdev8" passHref={true}>
+                        <Link target="_blank">
+                            Source Code <ExternalLinkIcon mx="2px"/>
+                        </Link>
+                    </NextLink>
+                </Paragraph>
             </Section>
         </Container>
     </Layout>
