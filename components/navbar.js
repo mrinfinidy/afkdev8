@@ -101,12 +101,9 @@ const Navbar = props => {
                                 <NextLink href="/posts" passHref>
                                     <MenuItem as={Link}>Posts</MenuItem>
                                 </NextLink>
-                                <NextLink href="/" passHref>
+                                <NextLink href="/about" passHref>
                                     <MenuItem as={Link} variant="outline">About</MenuItem>
                                 </NextLink>
-                                <MenuItem as={Link} href="https://github.com/mrinfinidy/afkdev8" target="_blank">
-                                    View Source
-                                </MenuItem>
                             </MenuList>
                         </Menu>
                     </Box>
