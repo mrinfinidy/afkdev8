@@ -90,7 +90,11 @@ const Navbar = props => {
                                 variant="outline"
                                 aria-label="Options"
                             />
-                            <MenuList bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}>
+                            <MenuList
+                                bg={useColorModeValue('whiteAlpha.900', 'blackAlpha.800')}
+                                color={useColorModeValue('teal', 'glassTeal')}
+                                borderColor={useColorModeValue('teal', 'glassTeal')}
+                            >
                                 <NextLink href="/works" passHref>
                                     <MenuItem as={Link}>Works</MenuItem>
                                 </NextLink>
