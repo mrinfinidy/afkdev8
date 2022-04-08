@@ -90,7 +90,7 @@ const Navbar = props => {
                                 variant="outline"
                                 aria-label="Options"
                             />
-                            <MenuList>
+                            <MenuList bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}>
                                 <NextLink href="/works" passHref>
                                     <MenuItem as={Link}>Works</MenuItem>
                                 </NextLink>
@@ -100,7 +100,7 @@ const Navbar = props => {
                                 <NextLink href="/" passHref>
                                     <MenuItem as={Link} variant="outline">About</MenuItem>
                                 </NextLink>
-                                <MenuItem as={Link} href="https://github.com/mrinfinidy/afkdev8">
+                                <MenuItem as={Link} href="https://github.com/mrinfinidy/afkdev8" target="_blank">
                                     View Source
                                 </MenuItem>
                             </MenuList>
