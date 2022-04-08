@@ -22,6 +22,7 @@ const About = () => (
                             </Link>
                         </NextLink>
                     </BulletPoint>
+                    <br></br>
                     Thank you for your amazing video guide. I have used it as a
                     template to create this website.
                 </BulletSection>
@@ -33,6 +34,7 @@ const About = () => (
                             </Link>
                         </NextLink>
                     </BulletPoint>
+                    <br></br>
                     Thank you for your cute Totoro 3d model.
                 </BulletSection>
             </Section>
@@ -41,13 +43,11 @@ const About = () => (
                 <Heading as="h3" fontSize={20} mb={4}>
                     View Source
                 </Heading>
-                <Paragraph>
-                    <NextLink href="https://github.com/mrinfinidy/afkdev8" passHref={true}>
-                        <Link target="_blank">
-                            Source Code <ExternalLinkIcon mx="2px"/>
-                        </Link>
-                    </NextLink>
-                </Paragraph>
+                <NextLink href="https://github.com/mrinfinidy/afkdev8" passHref={true}>
+                    <Link target="_blank">
+                        Source Code <ExternalLinkIcon mx="2px"/>
+                    </Link>
+                </NextLink>
             </Section>
         </Container>
     </Layout>
