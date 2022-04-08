@@ -2,7 +2,6 @@ import NextLink from 'next/link'
 import { Container, Heading, Link } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import Paragraph from '../components/paragraph'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 import { BulletSection, BulletPoint } from '../components/bullet'
