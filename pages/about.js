@@ -1,10 +1,9 @@
 import NextLink from 'next/link'
-import { Container, Box, Heading, Link, useColorModeValue } from '@chakra-ui/react'
+import { Container, Heading, Link } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { IoLogoGithub } from 'react-icons/io5'
 
 import { BulletSection, BulletPoint } from '../components/bullet'
 
