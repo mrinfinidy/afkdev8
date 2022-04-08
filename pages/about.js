@@ -6,7 +6,7 @@ import Paragraph from '../components/paragraph'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
 
-import { BioSection, BioYear } from '../components/bio'
+import { BulletSection, BulletPoint } from '../components/bullet'
 
 const About = () => (
     <Layout title="">
@@ -15,21 +15,21 @@ const About = () => (
                 <Heading as="h3" fontSize={20} mb={4}>
                     Credits
                 </Heading>
-                <BioSection>
-                    <BioYear>
+                <BulletSection>
+                    <BulletPoint>
                         <NextLink href="https://www.craftz.dog/" passHref={true}>
                             <Link target="_blank">
                                 &#64;craftzdog
                             </Link>
                         </NextLink>
-                    </BioYear>
+                    </BulletPoint>
                     Thank you for your amazing video guide. I have used it as a
                     template to create this website.
-                </BioSection>
-                <BioSection>
-                    <BioYear>Jesse Ragos</BioYear>
+                </BulletSection>
+                <BulletSection>
+                    <BulletPoint>Jesse Ragos</BulletPoint>
                     Thank you for your cute Totoro 3d model.
-                </BioSection>
+                </BulletSection>
             </Section>
 
             <Section delay={0.2}>

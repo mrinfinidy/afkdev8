@@ -14,7 +14,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+import { BulletSection, BulletPoint } from '../components/bullet'
 import { IoLogoGithub } from 'react-icons/io5'
 
 const Page = () => {
@@ -86,14 +86,14 @@ const Page = () => {
                     <Heading as="h3" variant="section-title">
                         Bio
                     </Heading>
-                    <BioSection>
-                        <BioYear>19xx</BioYear>
+                    <BulletSection>
+                        <BulletPoint>19xx</BulletPoint>
                         Born in ?, Europe.
-                    </BioSection>
-                    <BioSection>
-                        <BioYear>2022</BioYear>
+                    </BulletSection>
+                    <BulletSection>
+                        <BulletPoint>2022</BulletPoint>
                         Created this website.
-                    </BioSection>
+                    </BulletSection>
                 </Section>
 
                 <Section delay={0.3}>
