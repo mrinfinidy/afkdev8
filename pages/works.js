@@ -4,7 +4,7 @@ import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 
 import thumbSaeki from '../public/images/works/thumbSaeki.png'
-import thumbStayAtHome from '../public/images/works/thumbStayAtHome.png'
+import thumbStay4Tree from '../public/images/works/thumbStay4Tree.png'
 import thumbYTSC from '../public/images/works/thumbYTSC.png'
 import thumbYTSF from '../public/images/works/thumbYTSF.png'
 import thumbAutoFocus from '../public/images/works/thumbAutoFocus.png'
@@ -30,9 +30,9 @@ const Works = () => {
           </Section>
           <Section>
             <WorkGridItem
-              id="stayAtHome"
-              title="StayAtHome"
-              thumbnail={thumbStayAtHome}
+              id="stay4tree"
+              title="Stay4Tree"
+              thumbnail={thumbStay4Tree}
             >
               An Android app that was developed during a Covid-Hackathon.
             </WorkGridItem>
