@@ -16,6 +16,7 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BulletSection, BulletPoint } from '../components/bullet'
 import { IoLogoGithub } from 'react-icons/io5'
+import { IoMail } from 'react-icons/io5'
 
 const Page = () => {
   return (
@@ -129,6 +130,17 @@ const Page = () => {
                 </Button>
               </Link>
             </ListItem>
+			<ListItem>
+				<Link href='mailto:afkdev8@gmail.com'>
+					<Button
+						variant='ghost'
+						colorScheme='teal'
+						leftIcon={<IoMail />}
+					>
+						afkdev8@gmail.com
+					</Button>
+				</Link>
+			</ListItem>
           </List>
 
           <Box align="center" my={4}>
