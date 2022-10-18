@@ -13,7 +13,7 @@ const Stay4Tree = () => {
                 </Title>
                 <P>
                     An Android app that was developed during a Covid quarantine hackathon. It encourages people to stay at home by rewarding their time at home with real trees beeing planted around the world. <br />
-                    Unfortunately (but also fortunately) University resumed from its Covid-vacation right before I could finish this project and launch the Stay4Tree.
+                    Unfortunately (but also fortunately) University resumed from its Covid-vacation right before I could finish this project and launch Stay4Tree.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
