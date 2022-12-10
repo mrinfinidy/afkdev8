@@ -21,7 +21,7 @@ const Posts = () => (
                         thumbnail={thumbDevAsLife}
                         href="https://www.youtube.com/watch?v=bSMZgXzC9AA"
                     >
-						My inspiration for this site <ExternalLinkIcon mx="2px" />
+						My Inspiration for this Site <ExternalLinkIcon mx="2px" />
 					</GridItem>
                     <GridItem
 						title=""

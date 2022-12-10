@@ -15,43 +15,51 @@ const ErgoDash = () => {
 			<Container>
 				<Title>ErgoDash keyboard (work in progress)</Title>
 				<P>
-					<Link href="https://github.com/omkbd/ErgoDash">ErgoDash</Link>
+					<Link href="https://github.com/omkbd/ErgoDash">ErgoDash </Link>
 					is an open source split keyboard. I was introduced to it by a
 					generous friend when he gave me two ErgoDash PCBs and let me
-					try out the on he built. No need to say that I was amazed.
+					try out the one he built. No need to say I was amazed.
+					I will not go into details about the build guide but you can
+					check out my progress in the picture below.
 				</P>	
 				<SimpleGrid columns={[1,1,2]} gap={6} my={4} >
 					<GridItem 
-						title=""
+						title="3D Print Switch Case"
 						thumbnail={printCase}
 						href="/images/posts/printCase.jpg"
 					>
-						Switch case printed
+						I 3D printed all the case parts like the switch plate and
+						bottom plate. You can find various models on Thingiverse.
 					</GridItem>
 					<GridItem 
-						title=""
+						title="Solder Diodes on PCB"
 						thumbnail={diodesSoldered}
 						href="/images/posts/diodesSoldered.jpg"
 					>
-						Diodes soldered
+						Here you can see the diodes and backlight LEDs soldered
+						on the backside of the PCB.
 					</GridItem>
 					<GridItem 
-						title=""
+						title="Install and Solder Switches"
 						thumbnail={switchesInstalled}	
 						href="/images/posts/switchesInstalled.jpg"
 					>
-						Switches installed
+						It took me about two afternoons to finish soldering everything.		
 					</GridItem>
 					<GridItem 
-						title=""
+						title="Assemble Case"
 						thumbnail={caseAssembled}
 						href="/images/posts/caseAssembled.jpg"
 					>
-						Case assembled
+						It was actually not that easy to get 6mm spacers (fast).
+						They are used to create the space between switch and bottom plate.
 					</GridItem>
 				</SimpleGrid>
 				<P>
-					ErgoDash keyboard placeholder text.
+					The next step is to get the firmware working for a custom key mapping
+					and backlight. As you can see I also still need to get a nice set of keycaps.
+					<br /> <br />
+					To be continued...
 				</P>
 
 			</Container>

@@ -18,7 +18,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
                     {title}
                 </Text>
             </LinkOverlay>
-            <Text fontSize={16}>
+            <Text fontSize={14}>
                 {children}
             </Text>
         </LinkBox>
