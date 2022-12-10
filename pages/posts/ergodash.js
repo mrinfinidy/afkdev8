@@ -13,7 +13,7 @@ const ErgoDash = () => {
 	return (
 		<Layout title="">
 			<Container>
-				<Title>ErgoDash keyboard (work in progress)</Title>
+				<Title>ErgoDash Keyboard (work in progress)</Title>
 				<P>
 					<Link href="https://github.com/omkbd/ErgoDash">ErgoDash </Link>
 					is an open source split keyboard. I was introduced to it by a
