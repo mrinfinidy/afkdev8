@@ -1,15 +1,18 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { color, Container, Heading, SimpleGrid, useColorMode } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 
 import thumbSaeki from '../public/images/works/thumbSaeki.png'
+import thumbSaekiLight from '../public/images/works/thumbSaekiLight.png'
 import thumbStay4Tree from '../public/images/works/thumbStay4Tree.png'
 import thumbYTSC from '../public/images/works/thumbYTSC.png'
 import thumbYTSF from '../public/images/works/thumbYTSF.png'
 import thumbAutoFocus from '../public/images/works/thumbAutoFocus.png'
 
 const Works = () => {
+	const { colorMode } = useColorMode()
+
   return (
     <Layout>
       <Container>
@@ -22,7 +25,7 @@ const Works = () => {
             <WorkGridItem
               id="sdx-app"
               title="SAEKI Web App"
-              thumbnail={thumbSaeki}
+              thumbnail={colorMode === 'light' ? thumbSaekiLight : thumbSaeki}
             >
               An online digital manufacturing service to order a 3D printed
               object. &#x28;demo&#x29;
