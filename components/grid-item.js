@@ -1,7 +1,8 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
+import { Box, Text, LinkBox, LinkOverlay, useColorMode, color } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
+import {useEffect} from 'react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
     <Box w="100%" align="center">
@@ -71,10 +72,26 @@ export const PostGridItem = ({ children, id, title, thumbnail }) => (
     </Box>
 )
 
-export const GridItemStyle = () => (
-    <Global styles={`
-        .grid-item-thumbnail {
-            border-radius: 12px;
-        }
-    `}/>
-)
+export const GridItemStyle = () => {
+	const { colorMode } = useColorMode()
+	const textSelectionColor = colorMode === 'light' ? '#f0e7db' : '#230015'
+	const textSelectionBg = colorMode === 'light' ? 'teal' : '#88ccca'
+	const linkSelectionBg = colorMode === 'light' ? '#76B8D7' : '#ff63c3'
+
+	return (
+		<Global styles={`
+			.grid-item-thumbnail {
+				border-radius: 12px;
+			}
+			
+			::selection {
+				color: ${textSelectionColor};
+				background-color: ${textSelectionBg};
+			}
+
+			a::selection {
+				color: ${linkSelectionBg};
+			}
+		`}/>	
+	)
+}
