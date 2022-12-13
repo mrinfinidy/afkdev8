@@ -12,7 +12,8 @@ import {
     MenuList,
     MenuButton,
     IconButton,
-    useColorModeValue
+    useColorModeValue,
+	useColorMode
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button.js'
@@ -20,13 +21,14 @@ import ThemeToggleButton from './theme-toggle-button.js'
 const LinkItem = ({href, path, children }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+	const { colorMode } = useColorMode()
 
     return (
         <NextLink href={href}>
             <Link
                 p={2}
-                bg={active ? 'glassTeal' : undefined}
-                color={active ? '#202023' : inactiveColor}
+                bg={active ? (colorMode === 'light' ? 'teal' : 'glassTeal') : undefined}
+                color={active ? (colorMode === 'light' ? '#f0e7db' : '#230015') : inactiveColor}
 				borderRadius={12}
             >
                 {children}
@@ -94,7 +96,7 @@ const Navbar = props => {
                             <MenuList
                                 bg={useColorModeValue('whiteAlpha.900', 'blackAlpha.800')}
                                 color={useColorModeValue('teal', 'glassTeal')}
-                                borderColor={useColorModeValue('teal', 'glassTeal')}
+                                borderColor={useColorModeValue('teal', 'red')}
                             >
                                 <NextLink href="/works" passHref>
                                     <MenuItem as={Link}>Works</MenuItem>
