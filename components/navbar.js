@@ -96,7 +96,7 @@ const Navbar = props => {
                             <MenuList
                                 bg={useColorModeValue('whiteAlpha.900', 'blackAlpha.800')}
                                 color={useColorModeValue('teal', 'glassTeal')}
-                                borderColor={useColorModeValue('teal', 'red')}
+                                borderColor={useColorModeValue('teal', 'glassTeal')}
                             >
                                 <NextLink href="/works" passHref>
                                     <MenuItem as={Link}>Works</MenuItem>
