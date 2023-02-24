@@ -66,7 +66,7 @@ const StableDiffusion = () => {
 				</PostImage>
 				<P>
 					This one is quite funny, it probably made a meme because of the keyword
-					"parody". Although I have no idea what this meme could possibly mean
+					&quot;parody&quot;. Although I have no idea what this meme could possibly mean
 					you can see a lot of christian elemnts in it. The text just seems to be gibberish.
 				</P>
 				<Heading as="h4" fontSize={13}>
