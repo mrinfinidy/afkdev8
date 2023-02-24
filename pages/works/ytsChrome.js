@@ -15,7 +15,7 @@ const Work = () => {
                     A Chrome extension that lets you search highlighted text directly
                     on YouTube by right clicking it and selecting &apos;Search on YouTube&apos;.
                 </P>
-                <WorkImage src="/images/works/ytsChrome_ss.jpg" alt="ytsChrome" my={40} />
+                <WorkImage src="/images/works/ytsChrome_ss.jpg" alt="ytsChrome"/>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
