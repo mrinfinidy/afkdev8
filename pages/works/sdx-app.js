@@ -1,4 +1,4 @@
-import { Container, Grid, Link, List, ListItem, SimpleGrid } from '@chakra-ui/react'
+import { Container, Link, List, ListItem, SimpleGrid } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, Meta } from '../../components/work'
 import { GridItem } from '../../components/grid-item'
