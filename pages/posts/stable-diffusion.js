@@ -69,6 +69,7 @@ const StableDiffusion = () => {
 					&quot;parody&quot;. Although I have no idea what this meme could possibly mean
 					you can see a lot of christian elemnts in it. The text just seems to be gibberish.
 				</P>
+				{/*
 				<Heading as="h4" fontSize={13}>
 					Image 1: Mix between the pope and Bernie Sanders?
 				</Heading>
@@ -87,6 +88,26 @@ const StableDiffusion = () => {
 				<Heading as="h4" fontSize={13}>
 					Image 6: Ugly Mary?
 				</Heading>
+				*/}
+				<P>
+					Image 1: Mix between the pope and Bernie Sanders?
+				</P>
+				<P>
+					Image 2: An orthodox priest
+				</P>
+				<P>
+					Image 3: A poor person or maybe a monk?
+				</P>
+				<P>
+					Image 4: An angel
+				</P>
+				<P>
+					Image 5: Maybe the white gown or the beard are supposed to look religous
+				</P>
+				<P>
+					Image 6: Ugly Mary?
+				</P>
+					
 				
 			</Container>
 		</Layout>
