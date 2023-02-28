@@ -120,8 +120,8 @@ const StableDiffusion = () => {
 				</SimpleGrid>
 				<P>
 					This is just me having some more fun. I was actually surprised
-					how good and correct the faces turned out. As you will see in the
-					next following images this is not always easy.
+					how well the faces turned out. As you will see in the
+					next images human anatomy is not always easy.
 				</P>	
 				<br />
 				<Heading as="h3" fontSize={15}>
