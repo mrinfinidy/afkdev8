@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Container, Heading, Link, SimpleGrid } from '@chakra-ui/react'
 import { Title, PostImage } from '../../components/post'
 import { GridItem } from '../../components/grid-item'
 import P from '../../components/paragraph'
@@ -10,6 +10,10 @@ import highTechDystopia3 from '../../public/images/posts/stable-diffusion/highTe
 import highTechDystopia4 from '../../public/images/posts/stable-diffusion/highTechDystopia4.jpg'
 import femaleBradPitt from '../../public/images/posts/stable-diffusion/femaleBradPitt.png'
 import maleAngelinaJolie from '../../public/images/posts/stable-diffusion/maleAngelinaJolie.png'
+import handSimple from '../../public/images/posts/stable-diffusion/handSimple.png'
+import handWaveOldPhoto from '../../public/images/posts/stable-diffusion/handWaveOldPhoto.png'
+import handWaveTrump from '../../public/images/posts/stable-diffusion/handWaveTrump.png'
+import handWaveHillary from '../../public/images/posts/stable-diffusion/handWaveHillary.png'
 
 const StableDiffusion = () => {
 	return (
@@ -185,6 +189,42 @@ const StableDiffusion = () => {
 					easy to mess up since Stable Diffusion does not have the anatomical
 					knowledge of human hands.
 				</P>
+				<P>
+					Another reason could be that portaying hands playing the piano is
+					more complex than a simple picture of a hand. Take a look at the
+					following four images as a comparison. I am not going to include
+					the input for each picture but I have used this 
+					<Link 
+						href="https://www.reddit.com/r/StableDiffusion/comments/z7salo/with_the_right_prompt_stable_diffusion_20_can_do/"
+						target="_blank"
+					> Reddit post</Link> as a reference.
+				</P> 
+				<SimpleGrid columns={[1,1,2]} gap={6} my={4}>
+					<GridItem
+						title="Hand"	
+						thumbnail={handSimple}
+						href="/images/posts/stable-diffusion/handSimple.png"
+					>
+					</GridItem>
+					<GridItem
+						title="Old Photo of Man waving"
+						thumbnail={handWaveOldPhoto}
+						href="/images/posts/stable-diffusion/handWaveOldPhoto.png"
+					>
+					</GridItem>
+					<GridItem
+						title="Donald Trump Waving"
+						thumbnail={handWaveTrump}
+						href="/images/posts/stable-diffusion/handWaveTrump.png"
+					>
+					</GridItem>
+					<GridItem
+						title="Hillary Clinton Waving"
+						thumbnail={handWaveHillary}
+						href="/images/posts/stable-diffusion/handWaveHillary.png"
+					>
+					</GridItem>
+				</SimpleGrid>
 			</Container>
 		</Layout>
 	)
