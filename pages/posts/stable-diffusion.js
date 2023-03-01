@@ -207,7 +207,7 @@ const StableDiffusion = () => {
 					>
 					</GridItem>
 					<GridItem
-						title="Old Photo of Man waving"
+						title="Old Photo of Man Waving"
 						thumbnail={handWaveOldPhoto}
 						href="/images/posts/stable-diffusion/handWaveOldPhoto.png"
 					>
