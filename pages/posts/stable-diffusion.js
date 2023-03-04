@@ -155,8 +155,8 @@ const StableDiffusion = () => {
 					My first attempt in order to get a better result was to input
 					words that are more context related. This image is already a lot
 					closer to what I imagined and although you can recognize the hands
-					they look very wrong. The following two images were generated using
-					the image to image method and only one input word &quot;hands&quot;.	
+					they look very wrong. The next image has been generated using
+					the image to image method and with only one input word &quot;hands&quot;.	
 				</P>
 				<br />
 				<Heading as="h3" fontSize={15}>
@@ -175,7 +175,9 @@ const StableDiffusion = () => {
 				</P>
 				<br />
 				<Heading as="h3" fontSize={15}>
-					Input: hands
+					Input: pianist, piano, hand, looking down, detailed, detailed skin,
+					detailed face, relaxed, light, shadow, photo, symmetrical ears and face shape,
+					symmetrical circular eyes reflecting the environment, natural color
 				</Heading>
 				<PostImage
 					src="/images/posts/stable-diffusion/pianistProcessed2.png"
@@ -183,17 +185,18 @@ const StableDiffusion = () => {
 				>
 				</PostImage>
 				<P>
-					I tried again the same input but with different settings this time.
-					Now the face arguably looks creepier but the hands turned out more
-					correct than in the previous two pictures. I guess it is just really
-					easy to mess up since Stable Diffusion does not have the anatomical
-					knowledge of human hands.
+					This input has yielded the best result so far. It describes in detail
+					what the image should include and the negative prompt includes about
+					as many specifics. But it is still far from perfect. The relfection of
+					the keys is the other way around and the lid is deformed. I guess the
+					more complex an activity is the harder it is to get it right. I also
+					think it does not help that we are very familiar with human
+					anatomy and its depiction so that any oddness will immediately stand out.	
 				</P>
 				<P>
-					Another reason could be that portaying hands playing the piano is
-					more complex than a simple picture of a hand. Take a look at the
-					following four images as a comparison. I am not going to include
-					the input for each picture but I have used this 
+					Next I tried to generate something simpler as a comparison.
+					Take a look at the following four images of just a hand and people waving respectively. 
+					I am not going to include the input for each picture but I have used this 
 					<Link 
 						href="https://www.reddit.com/r/StableDiffusion/comments/z7salo/with_the_right_prompt_stable_diffusion_20_can_do/"
 						target="_blank"
