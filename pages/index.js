@@ -37,7 +37,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               afkdev8
             </Heading>
-            <p>Student in KA</p>
+            <p>Student and Software Engineer in KA</p>
           </Box>
           <Box
             flexShrink={0}
@@ -66,7 +66,7 @@ const Page = () => {
             You can check out my projects on the &quot;Works&quot; page. Or just
             click on &quot;My portfolio&quot; below to go there. They are mainly
             hobby projects like the browser add-ons and the Android app that was
-            created during a hackathon. My most significant work has been with{' '}
+            created during a hackathon. One of my most significant works has been with{' '}
             <Link href="https://saeki.ch/">SAEKI Robotics</Link> where we
             developed a digital manufacturing service.
             <br />
