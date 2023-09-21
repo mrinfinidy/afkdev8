@@ -23,6 +23,12 @@ const Stay4Tree = () => {
                             Here is a more detailed description of Stay4Tree <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
+					<ListItem>
+						<Meta>YouTube</Meta>
+						<Link href="https://www.youtube.com/watch?v=Feny7UXY8NM" target="_blank">
+							YouTube video describing the project <ExternalLinkIcon mx="2px" /> 
+						</Link>
+					</ListItem>
                     <ListItem>
                         <Meta>Platform</Meta>
                         <span>Android 5.0+</span>
