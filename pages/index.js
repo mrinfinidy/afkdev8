@@ -17,6 +17,7 @@ import Paragraph from '../components/paragraph'
 import { BulletSection, BulletPoint } from '../components/bullet'
 import { IoLogoGithub } from 'react-icons/io5'
 import { IoMail } from 'react-icons/io5'
+import { IoLogoLinkedin } from 'react-icons/io5'
 
 const Page = () => {
   return (
@@ -130,6 +131,17 @@ const Page = () => {
                 </Button>
               </Link>
             </ListItem>
+			<ListItem>
+				<Link href="https://www.linkedin.com/in/amon-f-61720328b/" target="_blank">
+					<Button
+						variant='ghost'
+						colorScheme='teal'
+						leftIcon={<IoLogoLinkedin />}
+					>
+						linkedIn	
+					</Button>
+				</Link>
+			</ListItem>
 			<ListItem>
 				<Link href='mailto:afkdev8@gmail.com'>
 					<Button
