@@ -19,6 +19,7 @@ const Stay4Tree = () => {
 				<br />
 				<YouTube
 					videoId="Feny7UXY8NM"
+					opts={{ width: "100%" }}
 				/>
 				<br />
                 <List ml={4} my={4}>
