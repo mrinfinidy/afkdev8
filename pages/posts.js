@@ -8,6 +8,7 @@ import thumbDevAsLife from '../public/images/contents/devaslife.webp'
 import rambalacNagoya from '../public/images/contents/rambalac_nagoya.webp'
 import thumbErgoDash from '../public/images/posts/caseAssembled.jpg'
 import thumbStableDiffusion from '../public/images/posts/stable-diffusion/highTechDystopia4.jpg'
+import thumbTimetable from '../public/images/posts/timetable/timetable-showcase.jpg'
 
 const Posts = () => (
     <Layout title="">
@@ -40,6 +41,11 @@ const Posts = () => (
 						id="stable-diffusion"
 						title="Stable Diffusion"
 						thumbnail={thumbStableDiffusion}
+					/>
+					<PostGridItem
+						id="timetable"
+						title="Timetable"
+						thumbnail={thumbTimetable}
 					/>
                 </SimpleGrid>
             </Section>
