@@ -14,12 +14,13 @@ const Timetable = () => {
 			<Container>
 				<Title>Timetable</Title>
 				<P>
-					This post explains how to make you own timtable display.
+					This post explains how to make your own timtable display.
 					In principle it is a Raspberry Pi running a Python program
 					which is connected to a monitor. It can be useful to have a
 					display showing public transport connections close to your
 					office for example. Follow this to make your own display table.
 					<br />
+					<WorkImage src='/images/posts/timetable/timetable-berlin.jpg' />
 				</P>
 				<br />
 				<Heading as="h2" fontSize={17}>
