@@ -1,4 +1,4 @@
-import { Button, Container, Heading, Link, Stack, Textarea } from '@chakra-ui/react'
+import { Button, Container, Heading, Link, Stack } from '@chakra-ui/react'
 import { Title } from '../../components/post'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
@@ -53,7 +53,7 @@ const Timetable = () => {
 					cities like Vienna, Paris or Rome too. You can do a quick check on their website
 					to see if they have information about your city.
 					<br />
-					We are going to use this site's option to show all outgoing connections from a
+					We are going to use this site&apos;s option to show all outgoing connections from a
 					specific station.
 				</P>
 				<br />
@@ -70,14 +70,14 @@ const Timetable = () => {
 					<CodeStyled>def times_berlin_hbf(time, date, timetable):</CodeStyled>
 				</Stack>
 				<P>
-				Our function takes three parameters. 'time' and 'date' contain the current
+				Our function takes three parameters. &apos;time&apos; and &apos;date&apos; contain the current
 				time and date so that we can make a request for the desired departing time.
-				'timetable' is a list where each index indicates a stop.
+				&apos;timetable&apos; is a list where each index indicates a stop.
 				</P>
 				<br />
 				Retrieve information from API
 				<Stack direction='column' spacing={0}>
-					<CodeStyled>url = 'https://www.fahrplan.guru/api/haltestelle?city=berlin&date=' + date + '&dir=dep&name=berlin-hauptbahnhof&state=berlin&time=' + time</CodeStyled>
+					<CodeStyled>url = &apos;https://www.fahrplan.guru/api/haltestelle?city=berlin&date=&apos; + date + &apos;&dir=dep&name=berlin-hauptbahnhof&state=berlin&time=&apos; + time</CodeStyled>
 					<CodeStyled>res = requests.get(url)</CodeStyled>
 					<CodeStyled>res = json.loads(res.text)</CodeStyled>
 				</Stack>
@@ -95,9 +95,9 @@ const Timetable = () => {
 				<Stack direction='column' spacing={0}>
 					<CodeStyled>for i in range(5):</CodeStyled>
 					<CodeStyled mIndent={30}>berlin_hbf_entry = []</CodeStyled>
-					<CodeStyled mIndent={30}>berlin_hbf_entry.append(res["transports"][i]["nearest_trip_time"])</CodeStyled>
-					<CodeStyled mIndent={30}>berlin_hbf_entry.append(res["transports"][i]["transport_info"]["full_name"])</CodeStyled>
-					<CodeStyled mIndent={30}>berlin_hbf_entry.append(res["transports"][i]["stop_title"])</CodeStyled>
+					<CodeStyled mIndent={30}>berlin_hbf_entry.append(res[&quot;transports&quot;][i][&quot;nearest_trip_time&quot;])</CodeStyled>
+					<CodeStyled mIndent={30}>berlin_hbf_entry.append(res[&quot;transports&quot;][i][&quot;transport_info&quot;][&quot;full_name&quot;])</CodeStyled>
+					<CodeStyled mIndent={30}>berlin_hbf_entry.append(res[&quot;transports&quot;][i][&quot;stop_title&quot;])</CodeStyled>
 					<CodeStyled mIndent={30}>timetable.append(berlin_hbf_entry)</CodeStyled>
 				</Stack>
 				<P>
@@ -121,24 +121,24 @@ const Timetable = () => {
 				<Stack direction='column' spacing={0}>
 					<CodeStyled>def get_date():</CodeStyled>
 					<CodeStyled mIndent={30}>today = datetime.date.today()</CodeStyled>
-					<CodeStyled mIndent={30}>day = datetime.datetime.strptime(str(today.day), "%d").strftime("%d")</CodeStyled>
-					<CodeStyled mIndent={30}>month = datetime.datetime.strptime(str(today.month), "%m").strftime("%m")
+					<CodeStyled mIndent={30}>day = datetime.datetime.strptime(str(today.day), &quot;%d&quot;).strftime(&quot;%d&quot;)</CodeStyled>
+					<CodeStyled mIndent={30}>month = datetime.datetime.strptime(str(today.month), &quot;%m&quot;).strftime(&quot;%m&quot;)
 </CodeStyled>
-					<CodeStyled mIndent={30}>year = datetime.datetime.strptime(str(today.year), "%Y").strftime("%Y")</CodeStyled>
-					<CodeStyled mIndent={30}>return day + '.' + month + '.' + year</CodeStyled>
+					<CodeStyled mIndent={30}>year = datetime.datetime.strptime(str(today.year), &quot;%Y&quot;).strftime(&quot;%Y&quot;)</CodeStyled>
+					<CodeStyled mIndent={30}>return day + &apos;.&apos; + month + &apos;.&apos; + year</CodeStyled>
 				</Stack>
 				<br />
 				Get current time
 				<Stack direction='column' spacing={0}>
 					<CodeStyled>def get_time(station):</CodeStyled>
 					<CodeStyled mIndent={30}>now = datetime.datetime.now()</CodeStyled>
-					<CodeStyled mIndent={30}>if station == 'berlin_hbf':</CodeStyled>
+					<CodeStyled mIndent={30}>if station == &apos;berlin_hbf&apos;:</CodeStyled>
 					<CodeStyled mIndent={60}>now + datetime.timedelta(minutes=2)</CodeStyled>
-					<CodeStyled mIndent={30}>elif station == 'berlin_pankow':</CodeStyled>
+					<CodeStyled mIndent={30}>elif station == &apos;berlin_pankow&apos;:</CodeStyled>
 					<CodeStyled mIndent={60}>now + datetime.timedelta(minutes=3)</CodeStyled>
-					<CodeStyled mIndent={30}>hour = datetime.datetime.strptime(str(now.hour), "%H").strftime("%H")</CodeStyled>
-					<CodeStyled mIndent={30}>minute = datetime.datetime.strptime(str(now.minute), "%M").strftime("%M")</CodeStyled>
-					<CodeStyled mIndent={30}>return hour + '%3A' + minute</CodeStyled>
+					<CodeStyled mIndent={30}>hour = datetime.datetime.strptime(str(now.hour), &quot;%H&quot;).strftime(&quot;%H&quot;)</CodeStyled>
+					<CodeStyled mIndent={30}>minute = datetime.datetime.strptime(str(now.minute), &quot;%M&quot;).strftime(&quot;%M&quot;)</CodeStyled>
+					<CodeStyled mIndent={30}>return hour + &apos;%3A&apos; + minute</CodeStyled>
 				</Stack>
 				<P>
 					Add a few extra minutes to the current time to only show the connections that
@@ -149,14 +149,14 @@ const Timetable = () => {
 				Format and print timetable
 				<Stack direction='column' spacing={0}>
 					<CodeStyled>def get_timetable(timetable):</CodeStyled>
-					<CodeStyled mIndent={30}>times_berlin_hbf(get_time('berlin_hbf'), get_date(), timetable)</CodeStyled>
-					<CodeStyled mIndent={30}>times_berlin_pankow(get_time('berlin_pankow'), get_date(), timetable)</CodeStyled>
+					<CodeStyled mIndent={30}>times_berlin_hbf(get_time(&apos;berlin_hbf&apos;), get_date(), timetable)</CodeStyled>
+					<CodeStyled mIndent={30}>times_berlin_pankow(get_time(&apos;berlin_pankow&apos;), get_date(), timetable)</CodeStyled>
 					<CodeStyled mIndent={30}>for row in timetable:</CodeStyled>
 					<CodeStyled mIndent={60}>if row == 0:</CodeStyled>
-					<CodeStyled mIndent={90}>print('\nBERLIN HAUPTBAHNHOF')</CodeStyled>
+					<CodeStyled mIndent={90}>print(&apos;\nBERLIN HAUPTBAHNHOF&apos;)</CodeStyled>
 					<CodeStyled mIndent={90}>continue</CodeStyled>
 					<CodeStyled mIndent={60}>if row == 1:</CodeStyled>
-					<CodeStyled mIndent={90}>print('\nBERLIN-PANKOW')</CodeStyled>
+					<CodeStyled mIndent={90}>print(&apos;\nBERLIN-PANKOW&apos;)</CodeStyled>
 					<CodeStyled mIndent={90}>continue</CodeStyled>
 					<CodeStyled mIndent={30}>print(&#147;&#123;&#58; &gt;20&#125; &#123;&#58; &gt;20&#125; &#123;&#58; &gt;50&#125;&#147;.format(*row))</CodeStyled>
 				</Stack>
@@ -170,7 +170,7 @@ const Timetable = () => {
 				<Stack direction='column' spacing={0}>
 					<CodeStyled>while True:</CodeStyled>
 					<CodeStyled mIndent={30}>timetable = []</CodeStyled>
-					<CodeStyled mIndent={30}>_ = os.system('clear')</CodeStyled>
+					<CodeStyled mIndent={30}>_ = os.system(&apos;clear&apos;)</CodeStyled>
 					<CodeStyled mIndent={30}>get_timetable(timetable)</CodeStyled>
 					<CodeStyled mIndent={30}>sleep(30)</CodeStyled>
 				</Stack>
@@ -204,15 +204,15 @@ const Timetable = () => {
 				Run startup script on Pi
 				<Stack direction='column' spacing={0}>
 					<CodeStyled>#!/usr/bin/env bash</CodeStyled>
-					<CodeStyled>lxterminal --command="/usr/bin/python /home/notadmin/Documents/kvv-timetable/main.py"</CodeStyled>
+					<CodeStyled>lxterminal --command=&quot;/usr/bin/python /home/notadmin/Documents/kvv-timetable/main.py&quot;</CodeStyled>
 				</Stack>
 				<P>
-					Create a bash script 'autostart-timetable' and make it executable by running&nbsp;
+					Create a bash script &apos;autostart-timetable&apos; and make it executable by running&nbsp;
 					<CodeStyled mIndent={0}>chmod +x autostart-timetable</CodeStyled>.
 					<br />
 					Now make the script run automatically every time the Pi is booted by
 					adding <CodeStyled mIndent={0}>@path/to/autostart-timetable</CodeStyled>
-					&nbsp;to the LXDE autostart file. I stored 'autostart-timetable' in&nbsp;
+					&nbsp;to the LXDE autostart file. I stored &apos;autostart-timetable&apos; in&nbsp;
 					<CodeStyled mIndent={0}>~/Documents/</CodeStyled> and useed a user specific
 					LXDE autostart file so I added <CodeStyled mIndent={0}>@Documents/autostart-timetable</CodeStyled> to
 					<CodeStyled mIndent={0}>~/.config/lxsession/LXDE-pi/autostart</CodeStyled>.
