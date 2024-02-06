@@ -49,7 +49,7 @@ const Timetable = () => {
 				</Heading>
 				<P>
 					We are going to use an (inofficial) API by
-					<Link href="https://www.fahrplan.guru/" target="_blank"> fahrplan.guru <ExternalLinkIcon mx='2px' /></Link>.
+					<Link href="https://www.fahrplan.guru/" target="_blank" _focus={{ borderShadow: 'none' }}> fahrplan.guru <ExternalLinkIcon mx='2px' /></Link>.
 					This site is intended for german public transport but it works for other european
 					cities like Vienna, Paris or Rome too. You can do a quick check on their website
 					to see if they have information about your city.
@@ -188,6 +188,7 @@ const Timetable = () => {
 							colorScheme='teal'
 							leftIcon={<IoLogoGithub />}
 							rightIcon={<ExternalLinkIcon />}
+							_focus={{ borderShadow: 'none' }}
 						>
 							GitHub
 						</Button>
@@ -197,7 +198,7 @@ const Timetable = () => {
 				<br />
 				<Heading as='h3' fontSize={14}>3) Configure Raspberry Pi</Heading> 
 				<br />
-				<Link href='https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system' target='_blank'>
+				<Link href='https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system' target='_blank' _focus={{ borderShadow: 'none' }}>
 					Install Raspberry Pi OS <ExternalLinkIcon mx='2px' />
 				</Link>
 				<br />
@@ -218,7 +219,7 @@ const Timetable = () => {
 					LXDE autostart file so I added <CodeStyled mIndent={0}>@Documents/autostart-timetable</CodeStyled> to
 					<CodeStyled mIndent={0}>~/.config/lxsession/LXDE-pi/autostart</CodeStyled>.
 					<br />
-					<Link href='https://www.raspberrypi-spy.co.uk/2014/05/how-to-autostart-apps-in-rasbian-lxde-desktop/' target='_blank'>Here<ExternalLinkIcon mx='2px' /></Link>
+					<Link href='https://www.raspberrypi-spy.co.uk/2014/05/how-to-autostart-apps-in-rasbian-lxde-desktop/' target='_blank' _focus={{ boxShadow: 'none' }}>Here<ExternalLinkIcon mx='2px' /></Link>
 					&nbsp;is a more detailed explanation about autostart on Pi.
 				</P>
 				<br />

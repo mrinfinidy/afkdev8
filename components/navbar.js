@@ -91,6 +91,7 @@ const Navbar = props => {
                                 as={IconButton}
                                 icon={<HamburgerIcon />}
                                 variant="outline"
+								_focus={{ boxShadow: "none" }}
                                 aria-label="Options"
                             />
                             <MenuList
@@ -99,13 +100,13 @@ const Navbar = props => {
                                 borderColor={useColorModeValue('teal', 'glassTeal')}
                             >
                                 <NextLink href="/works" passHref>
-                                    <MenuItem as={Link}>Works</MenuItem>
+                                    <MenuItem as={Link} _focus={{ boxShadow: "none" }} >Works</MenuItem>
                                 </NextLink>
                                 <NextLink href="/posts" passHref>
-                                    <MenuItem as={Link}>Posts</MenuItem>
+                                    <MenuItem as={Link} _focus={{ boxShadow: "none" }} >Posts</MenuItem>
                                 </NextLink>
                                 <NextLink href="/about" passHref>
-                                    <MenuItem as={Link} variant="outline">About</MenuItem>
+                                    <MenuItem as={Link} variant="outline" _focus={{ boxShadow: "none" }} >About</MenuItem>
                                 </NextLink>
                             </MenuList>
                         </Menu>

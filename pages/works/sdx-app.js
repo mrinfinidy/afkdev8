@@ -63,7 +63,7 @@ const Work = () => {
         		<List ml={4} my={4}>
           			<ListItem>
            				<Meta>Website</Meta>
-            			<Link href="https://sdx-app-d6a5f.web.app/" target="_blank">
+            			<Link href="https://sdx-app-d6a5f.web.app/" target="_blank" _focus={{ boxShadow: 'none' }}>
             	  		Try it out here <ExternalLinkIcon mx="2px" />
            				</Link>
           			</ListItem>

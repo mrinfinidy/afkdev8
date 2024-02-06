@@ -15,7 +15,7 @@ const ErgoDash = () => {
 			<Container>
 				<Title>ErgoDash Keyboard (work in progress)</Title>
 				<P>
-					<Link href="https://github.com/omkbd/ErgoDash" target="_blank">ErgoDash </Link>
+					<Link href="https://github.com/omkbd/ErgoDash" target="_blank" _focus={{ boxShadow: 'none' }} >ErgoDash </Link>
 					is an open source split keyboard. I was introduced to it by a
 					generous friend when he gave me two ErgoDash PCBs and let me
 					try out the one he built. No need to say I was amazed.

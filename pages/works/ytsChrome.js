@@ -22,6 +22,7 @@ const Work = () => {
                         <Link
                             href="https://chrome.google.com/webstore/detail/youtube-quick-search/algmmcbdjmplgjmligafamelebkahfhh?hl=en"
                             target="_blank"
+							_focus={{ boxShadow: 'none' }}
                         >
                             Install from Chrome web store <ExternalLinkIcon mx="2px" />
                         </Link>
@@ -32,7 +33,7 @@ const Work = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>Source</Meta>
-                        <Link href="https://github.com/mrinfinidy/YouTubeSearch" target="_blank">
+                        <Link href="https://github.com/mrinfinidy/YouTubeSearch" target="_blank" _focus={{ boxShadow: 'none' }}>
                             Source code <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>

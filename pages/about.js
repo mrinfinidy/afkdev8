@@ -16,7 +16,7 @@ const About = () => (
                 <BulletSection>
                     <BulletPoint>
                         <NextLink href="https://www.craftz.dog/" passHref={true}>
-                            <Link target="_blank">
+                            <Link target="_blank" _focus={{ boxShadow: 'none' }}>
                                 &#64;craftzdog
                             </Link>
                         </NextLink>
@@ -28,7 +28,7 @@ const About = () => (
                 <BulletSection>
                     <BulletPoint>
                         <NextLink href="https://www.cgtrader.com/jkielr" passHref={true}>
-                            <Link target="_blank">
+                            <Link target="_blank" _focus={{ boxShadow: 'none' }}>
                                 Jesse Ragos
                             </Link>
                         </NextLink>
@@ -43,7 +43,7 @@ const About = () => (
                     View Source
                 </Heading>
                 <NextLink href="https://github.com/mrinfinidy/afkdev8" passHref={true}>
-                    <Link target="_blank">
+                    <Link target="_blank" _focus={{ boxShadow: 'none' }}>
                         Source Code <ExternalLinkIcon mx="2px"/>
                     </Link>
                 </NextLink>

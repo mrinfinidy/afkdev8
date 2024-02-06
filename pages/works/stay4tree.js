@@ -26,14 +26,14 @@ const Stay4Tree = () => {
                     <ListItem>
                         <Meta>YouTube</Meta>
                         <Link 
-                            href="https://www.youtube.com/watch?v=Feny7UXY8NM" target="_blank">
+                            href="https://www.youtube.com/watch?v=Feny7UXY8NM" target="_blank" _focus={{ boxShadow: "none" }}>
                             Link to YouTube <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Website</Meta>
                         <Link 
-                            href="https://devpost.com/software/stay4tree" target="_blank">
+                            href="https://devpost.com/software/stay4tree" target="_blank" _focus={{ boxShadow: "none" }}>
                             Here is a more detailed description of Stay4Tree <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
@@ -43,7 +43,7 @@ const Stay4Tree = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>Source</Meta>
-                        <Link href="https://github.com/mrinfinidy/StayAtHome.git" target="_blank">
+                        <Link href="https://github.com/mrinfinidy/StayAtHome.git" target="_blank" _focus={{ boxShadow: "none" }}>
                             Source code <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>

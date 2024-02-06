@@ -21,6 +21,7 @@ const Work = () => {
                         <Link
                             href="https://addons.mozilla.org/en-US/firefox/addon/youtube-autofocus/"
                             target="_blank"
+							_focus={{ boxShadow: 'none' }}
                         >
                             Install from Firefox add-on store <ExternalLinkIcon mx="2px" />
                         </Link>
@@ -31,7 +32,7 @@ const Work = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>Source</Meta>
-                        <Link href="https://github.com/mrinfinidy/autofocusYT" target="_blank">
+                        <Link href="https://github.com/mrinfinidy/autofocusYT" target="_blank" _focus={{ boxShadow: 'none' }}>
                             Source code <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>

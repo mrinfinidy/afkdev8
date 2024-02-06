@@ -66,12 +66,12 @@ const Page = () => {
             click on &quot;My portfolio&quot; below to go there. They are mainly
             hobby projects like the browser add-ons and the Android app that was
             created during a hackathon. One of my most significant works has been with{' '}
-            <Link href="https://saeki.ch/">SAEKI Robotics</Link> where we
+            <Link href="https://saeki.ch/" _focus={{ boxShadow: "none" }} >SAEKI Robotics</Link> where we
             developed a digital manufacturing service.
             <br />
             LINKS:{' '}
             <NextLink href="/works/sdx-app">
-              <Link>SAEKI Web App</Link>
+              <Link _focus={{ boxShadow: "none" }}>SAEKI Web App</Link>
             </NextLink>
           </Paragraph>
           <Box align="center" my={4}>
@@ -105,7 +105,8 @@ const Page = () => {
             Ghibli,{' '}
             <Link
               href="https://www.youtube.com/watch?v=TKy0Lyl4g-s"
-              target="_blank"
+              target="_blank" 
+			  _focus={{ boxShadow: "none" }}
             >
               Music
             </Link>
@@ -124,6 +125,7 @@ const Page = () => {
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<IoLogoGithub />}
+				  _focus={{ boxShadow: "none" }}
                 >
                   afkdev8 (mr.infinidy)
                 </Button>
@@ -135,6 +137,7 @@ const Page = () => {
 						variant='ghost'
 						colorScheme='teal'
 						leftIcon={<IoLogoLinkedin />}
+						_focus={{ boxShadow: "none" }}
 					>
 						linkedIn	
 					</Button>
@@ -146,6 +149,7 @@ const Page = () => {
                                 variant='ghost'
                                 colorScheme='teal'
                                 leftIcon={<IoLogoEuro />}
+								_focus={{ boxShadow: "none" }}
                             >
                                 Buy me a coffee
                             </Button>
@@ -157,6 +161,7 @@ const Page = () => {
 						variant='ghost'
 						colorScheme='teal'
 						leftIcon={<IoMail />}
+						_focus={{ boxShadow: "none" }}
 					>
 						afkdev8@gmail.com
 					</Button>

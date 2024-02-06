@@ -200,6 +200,7 @@ const StableDiffusion = () => {
 					<Link 
 						href="https://www.reddit.com/r/StableDiffusion/comments/z7salo/with_the_right_prompt_stable_diffusion_20_can_do/"
 						target="_blank"
+						_focus={{ boxShadow: 'none' }}
 					> Reddit post</Link> as a reference.
 				</P> 
 				<SimpleGrid columns={[1,1,2]} gap={6} my={4}>

@@ -20,6 +20,7 @@ const ThemeToggleButton = () => {
                     colorScheme={useColorModeValue('purple', 'orange')}
                     icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
                     onClick={toggleColorMode}
+					_focus={{ boxShadow: 'none' }}
                 >
 
                 </IconButton>
