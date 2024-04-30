@@ -24,7 +24,7 @@ const FakeNativeApp = () => {
           Microsoft doesn&apos;t care about the linux UX.
           I for one have had the experience that half of the time when I launch Teams the chat window is blank.
           <br />
-          &bull; And Spotify wouldn't even build on my Gentoo partition...
+          &bull; And Spotify wouldn&apos;t even build on my Gentoo partition...
         </P>
         <br />
         <P>
@@ -34,7 +34,7 @@ const FakeNativeApp = () => {
           right now? Even better, just use Firefox!
           <br />
           This way you don&apos;t need to install any additional program (ofc you already use Firefox right?)
-          and don't need to worry about updates. And you won't see a visual difference to the nativefier version.
+          and don&apos;t need to worry about updates. And you won&apos;t see a visual difference to the nativefier version.
           No title bar, no address bar, no tabs. Just the app.
           Let me show you how to do it.
         </P>
@@ -54,32 +54,36 @@ const FakeNativeApp = () => {
           <br />
           to true.
           <br />
-          <b>Step 3:</b> Open this profile's root directory (the path is displayed on the about:profile page),
+          <b>Step 3:</b> Open this profile&apos;s root directory (the path is displayed on the about:profile page),
           create a direcotry named &quot;chrome&quot; and a file named &quot;userChrome.css&quot; inside it.
           <br />
           <b>Step 4:</b> Paste the following code into the userChrome.css file:
-          <Stack>
-            <CodeStyled>
-              /*
-               * Do not remove the @namespace line -- it's required for correct functioning
-               */
-              <br />
-              @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
-              <br />
-              /*
-               * Hide tab bar, navigation bar and scrollbars
-               * !important may be added to force override, but not necessary
-               * #content is not necessary to hide scroll bars
-               */
-              <br />
-              <br />
-              #TabsToolbar &#123;visibility: collapse;&#125;
-              <br />
-              #navigator-toolbox &#123;visibility: collapse;&#125;
-              <br />
-              browser &#123;margin-right: -14px; margin-bottom: -14px;&#125;
-            </CodeStyled>
-          </Stack>
+          <pre>
+            <code>
+              <Stack>
+                <CodeStyled>
+                  &#8725;*
+                   * Do not remove the @namespace line -- it&apos;s required for correct functioning
+                   */
+                  <br />
+                  @namespace url(&quot;http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul&quot;); /* set default namespace to XUL */
+                  <br />
+                  &#8725;*
+                   * Hide tab bar, navigation bar and scrollbars
+                   * !important may be added to force override, but not necessary
+                   * #content is not necessary to hide scroll bars
+                   */
+                  <br />
+                  <br />
+                  #TabsToolbar &#123;visibility: collapse;&#125;
+                  <br />
+                  #navigator-toolbox &#123;visibility: collapse;&#125;
+                  <br />
+                  browser &#123;margin-right: -14px; margin-bottom: -14px;&#125;
+                </CodeStyled>
+              </Stack>
+            </code>
+          </pre>
           <b>Step 5:</b> Launch a new Firefox instance with this profile and open the webapp you want to use:
           <br />
           <CodeStyled>firefox-bin --new-window -P &lt;profile name&gt; &lt;url&gt;&nbsp;</CodeStyled>
