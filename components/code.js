@@ -5,7 +5,7 @@ const CodeStyled = ({ children, mIndent }) => {
 	const colorScheme = colorMode == 'light' ? 'teal' : 'purple'
 
 	return (
-		<Code  colorScheme={ colorScheme } style={{ textIndent: mIndent }}>
+		<Code  colorScheme={ colorScheme } style={{ textIndent: mIndent }} overflowX="auto">
 			{children}
 		</Code>
 	)

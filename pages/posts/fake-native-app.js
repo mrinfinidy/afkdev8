@@ -62,17 +62,7 @@ const FakeNativeApp = () => {
             <code>
               <Stack>
                 <CodeStyled>
-                  &#8725;*
-                   * Do not remove the @namespace line -- it&apos;s required for correct functioning
-                   */
-                  <br />
-                  @namespace url(&quot;http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul&quot;); /* set default namespace to XUL */
-                  <br />
-                  &#8725;*
-                   * Hide tab bar, navigation bar and scrollbars
-                   * !important may be added to force override, but not necessary
-                   * #content is not necessary to hide scroll bars
-                   */
+                  @namespace url(&quot;http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul&quot;);
                   <br />
                   <br />
                   #TabsToolbar &#123;visibility: collapse;&#125;
