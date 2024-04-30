@@ -9,6 +9,7 @@ import rambalacNagoya from '../public/images/contents/rambalac_nagoya.webp'
 import thumbErgoDash from '../public/images/posts/caseAssembled.jpg'
 import thumbStableDiffusion from '../public/images/posts/stable-diffusion/highTechDystopia4.jpg'
 import thumbTimetable from '../public/images/posts/timetable/timetable-berlin.jpg'
+import thumbFakeNativeApp from '../public/images/posts/fake-native-app/firefox.png'
 
 const Posts = () => (
     <Layout title="">
@@ -33,11 +34,16 @@ const Posts = () => (
 						title="Timetable"
 						thumbnail={thumbTimetable}
 					/>
-                    <GridItem
-                        title=""
-                        thumbnail={thumbDevAsLife}
-                        href="https://www.youtube.com/watch?v=bSMZgXzC9AA"
-                    >
+          <PostGridItem
+            id="fake-native-app"
+            title='"Fake" Native App'
+            thumbnail={thumbFakeNativeApp}
+          />
+          <GridItem
+              title=""
+              thumbnail={thumbDevAsLife}
+              href="https://www.youtube.com/watch?v=bSMZgXzC9AA"
+          >
 						My Inspiration for this Site <ExternalLinkIcon mx="2px" />
 					</GridItem>
                     <GridItem
