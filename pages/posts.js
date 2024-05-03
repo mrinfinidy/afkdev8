@@ -46,13 +46,6 @@ const Posts = () => (
           >
 						My Inspiration for this Site <ExternalLinkIcon mx="2px" />
 					</GridItem>
-                    <GridItem
-						title=""
-                        thumbnail={rambalacNagoya}
-                        href="https://www.youtube.com/watch?v=w0SJgbALym8"
-                    >
-						Nagoya (Rambalac) <ExternalLinkIcon mx="2px" />
-					</GridItem>
                 </SimpleGrid>
             </Section>
         </Container>
