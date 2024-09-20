@@ -1,7 +1,8 @@
-import { Button, Container, Heading, Link, Stack } from '@chakra-ui/react'
+import { Button, Heading, Link, Stack } from '@chakra-ui/react'
 import { Title } from '../../components/post'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
+import Container4k from '../../components/layouts/container'
 import { BulletSection, BulletPoint } from '../../components/bullet'
 import CodeStyled from '../../components/code'
 import { IoLogoGithub } from 'react-icons/io5'
@@ -11,7 +12,7 @@ import { WorkImage } from '../../components/work'
 const Timetable = () => {
 	return (
 		<Layout title=''>
-			<Container>
+			<Container4k>
 				<Title>Timetable</Title>
 				<P>
 					This post explains how to make your own timtable display.
@@ -227,7 +228,7 @@ const Timetable = () => {
 				<br />
 				<WorkImage src='/images/posts/timetable/timetable-showcase.jpg' />
 				Connect the Raspberry Pi to a monitor and enjoy you custom timtable display!
-			</Container>
+			</Container4k>
 		</Layout>	
 	)
 }

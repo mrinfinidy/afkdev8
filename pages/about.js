@@ -1,14 +1,15 @@
 import NextLink from 'next/link'
-import { Container, Heading, Link } from '@chakra-ui/react'
+import { Heading, Link } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+import Container4k from '../components/layouts/container'
 
 import { BulletSection, BulletPoint } from '../components/bullet'
 
 const About = () => (
     <Layout title="">
-        <Container>
+        <Container4k>
             <Section delay={0.1}>
                 <Heading as="h3" fontSize={20} mb={4}>
                     Credits
@@ -48,7 +49,7 @@ const About = () => (
                     </Link>
                 </NextLink>
             </Section>
-        </Container>
+        </Container4k>
     </Layout>
 )
 

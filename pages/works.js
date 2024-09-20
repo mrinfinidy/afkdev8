@@ -1,7 +1,8 @@
-import { Container, Heading, SimpleGrid, useColorMode } from '@chakra-ui/react'
+import { Heading, SimpleGrid, useColorMode } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
+import Container4k from '../components/layouts/container'
 
 import thumbSaeki from '../public/images/works/thumbSaeki.png'
 import thumbSaekiLight from '../public/images/works/thumbSaekiLight.png'
@@ -15,7 +16,7 @@ const Works = () => {
 
   return (
     <Layout>
-      <Container>
+      <Container4k>
         <Heading as="h3" fontSize={20} mb={4}>
           Works
         </Heading>
@@ -71,7 +72,7 @@ const Works = () => {
             </WorkGridItem>
           </Section>
         </SimpleGrid>
-      </Container>
+      </Container4k>
     </Layout>
   )
 }

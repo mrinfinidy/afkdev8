@@ -1,5 +1,6 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
+import Container4k from '../components/layouts/container'
 import Section from '../components/section'
 import { GridItem, PostGridItem } from '../components/grid-item'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -12,7 +13,7 @@ import thumbFakeNativeApp from '../public/images/posts/fake-native-app/firefox.p
 
 const Posts = () => (
     <Layout title="">
-        <Container>
+        <Container4k>
             <Heading as="h3" fontSize={20} mb={4}>
                 Posts
             </Heading>
@@ -47,7 +48,7 @@ const Posts = () => (
 					</GridItem>
                 </SimpleGrid>
             </Section>
-        </Container>
+        </Container4k>
     </Layout>
 )
 

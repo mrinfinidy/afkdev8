@@ -1,9 +1,10 @@
-import { Container, Link, List, ListItem, SimpleGrid } from '@chakra-ui/react'
+import { Link, List, ListItem, SimpleGrid } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, Meta } from '../../components/work'
 import { GridItem } from '../../components/grid-item'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
+import Container4k from '../../components/layouts/container'
 
 import uploadModel from '../../public/images/works/uploadModel.png'
 import uploadModelSelected from '../../public/images/works/uploadModelSelected.png'
@@ -15,7 +16,7 @@ import quotes from '../../public/images/works/quotes.png'
 const Work = () => {
 	return (
     	<Layout title="">
-      		<Container>
+      		<Container4k>
         		<Title>SAEKI Web App</Title>
         		<P>
           			An online digital manufacturing service to order a 3D printed object.
@@ -72,7 +73,7 @@ const Work = () => {
             			<span>Browser</span>
           			</ListItem>
         		</List>
-      		</Container>
+      		</Container4k>
     	</Layout>
   	)
 }

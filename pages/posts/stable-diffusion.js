@@ -1,8 +1,9 @@
-import { Container, Heading, Link, SimpleGrid } from '@chakra-ui/react'
+import { Heading, Link, SimpleGrid } from '@chakra-ui/react'
 import { Title, PostImage } from '../../components/post'
 import { GridItem } from '../../components/grid-item'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
+import Container4k from '../../components/layouts/container'
 
 import highTechDystopia1 from '../../public/images/posts/stable-diffusion/highTechDystopia1.jpg'
 import highTechDystopia2 from '../../public/images/posts/stable-diffusion/highTechDystopia2.jpg'
@@ -18,7 +19,7 @@ import handWaveHillary from '../../public/images/posts/stable-diffusion/handWave
 const StableDiffusion = () => {
 	return (
 		<Layout title="">
-			<Container>
+			<Container4k>
 				<Title>Stable Diffusion (AI) Creations</Title>
 				<P>
 					I have recently tried out Stable Diffusion, a text-to-image
@@ -229,7 +230,7 @@ const StableDiffusion = () => {
 					>
 					</GridItem>
 				</SimpleGrid>
-			</Container>
+			</Container4k>
 		</Layout>
 	)
 }

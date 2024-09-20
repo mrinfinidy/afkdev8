@@ -1,7 +1,6 @@
 import NextLink from 'next/link'
 import {
   Button,
-  Container,
   Box,
   Heading,
   Image,
@@ -12,6 +11,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
+import Container4k from '../components/layouts/container'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BulletSection, BulletPoint } from '../components/bullet'
@@ -20,8 +20,9 @@ import { IoLogoGithub, IoMail, IoLogoLinkedin, IoLogoEuro } from 'react-icons/io
 const Page = () => {
   return (
     <Layout>
-      <Container>
+      <Container4k maxW="4k">
         <Box
+          maxW="4k"
           borderRadius="lg"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           p={3}
@@ -177,7 +178,7 @@ const Page = () => {
             </NextLink>
           </Box>
         </Section>
-      </Container>
+      </Container4k>
     </Layout>
   )
 }

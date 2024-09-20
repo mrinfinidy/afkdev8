@@ -1,8 +1,9 @@
-import { Container, SimpleGrid, Link } from '@chakra-ui/react'
+import { SimpleGrid, Link } from '@chakra-ui/react'
 import { Title } from '../../components/post'
 import { GridItem } from '../../components/grid-item'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
+import Container4k from '../../components/layouts/container'
 
 import printCase from '../../public/images/posts/printCase.jpg'
 import diodesSoldered from '../../public/images/posts/diodesSoldered.jpg'
@@ -12,7 +13,7 @@ import caseAssembled from '../../public/images/posts/caseAssembled.jpg'
 const ErgoDash = () => {
 	return (
 		<Layout title="">
-			<Container>
+			<Container4k>
 				<Title>ErgoDash Keyboard (work in progress)</Title>
 				<P>
 					<Link href="https://github.com/omkbd/ErgoDash" target="_blank" _focus={{ boxShadow: 'none' }} >ErgoDash </Link>
@@ -62,7 +63,7 @@ const ErgoDash = () => {
 					To be continued...
 				</P>
 
-			</Container>
+			</Container4k>
 		</Layout>
 	)
 }

@@ -1,13 +1,14 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
+import { Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
+import Container4k from '../../components/layouts/container'
 
 const Work = () => {
     return (
         <Layout title="">
-            <Container>
+            <Container4k>
                 <Title>
                     YouTube Quick Search Chrome <Badge>2020-</Badge>
                 </Title>
@@ -38,7 +39,7 @@ const Work = () => {
                         </Link>
                     </ListItem>
                 </List>
-            </Container>
+            </Container4k>
         </Layout>
     )
 }

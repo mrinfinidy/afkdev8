@@ -1,14 +1,15 @@
-import { Container, Link, List, ListItem } from '@chakra-ui/react'
+import { Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
+import Container4k from '../../components/layouts/container'
 import YouTube from 'react-youtube'
 
 const Stay4Tree = () => {
     return (
         <Layout title="">
-            <Container>
+            <Container4k>
                 <Title>
                     Stay4Tree 
                 </Title>
@@ -48,7 +49,7 @@ const Stay4Tree = () => {
                         </Link>
                     </ListItem>
                 </List>
-            </Container>
+            </Container4k>
         </Layout>
     )
 }

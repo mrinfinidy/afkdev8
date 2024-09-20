@@ -10,12 +10,13 @@ const variants = {
 
 const Layout = ({ children, title }) => (
     <motion.article
-        initial="hidden"
-        animate="enter"
-        exit="exit"
-        variants={variants}
-        transition={{ duration: 0.15, type: 'easeInOut' }}
-        style={{ position: 'relative' }}
+      initial="hidden"
+      animate="enter"
+      exit="exit"
+      variants={variants}
+      transition={{ duration: 0.15, type: 'easeInOut' }}
+      style={{ position: 'relative' }}
+      maxW="4k"
     >
         <>
             {title && (

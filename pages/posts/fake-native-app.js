@@ -1,14 +1,15 @@
-import { Container, Link, Heading, Stack } from '@chakra-ui/react'
+import { Link, Heading, Stack } from '@chakra-ui/react'
 import { Title } from '../../components/post'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import CodeStyled from '../../components/code'
 import { WorkImage } from '../../components/work'
+import Container4k from '../../components/layouts/container'
 
 const FakeNativeApp = () => {
   return (
     <Layout title=''>
-      <Container>
+      <Container4k>
         <Title>&quot;Fake&quot; Native App</Title>
         <P>
           Do you use Discord? Or Microsoft Teams? Or maybe Spotify?
@@ -89,7 +90,7 @@ const FakeNativeApp = () => {
           <br />
           Have fun with your own &quot;fake&quot; native apps!
         </P>
-      </Container>
+      </Container4k>
     </Layout>
   )
 }
