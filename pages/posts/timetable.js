@@ -227,7 +227,7 @@ const Timetable = () => {
 				<Heading as='h3' fontSize={14}>4) End</Heading>
 				<br />
 				<WorkImage src='/images/posts/timetable/timetable-showcase.jpg' />
-				Connect the Raspberry Pi to a monitor and enjoy you custom timtable display!
+				Connect the Raspberry Pi to a monitor and enjoy your custom timetable display!
 			</Container4k>
 		</Layout>	
 	)
