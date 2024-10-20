@@ -6,7 +6,7 @@ import VoxelTotoro from '../voxel-totoro'
 
 const Main = ({ children, router }) => {
     return (
-        <Box as="main" pb={8} maxW="4k">
+        <Box as="main" pb={8} maxw="4k">
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>afkdev8 - Homepage</title>
@@ -14,7 +14,7 @@ const Main = ({ children, router }) => {
 
             <Navbar path={router.asPath} />
 
-            <Container maxW="container.xl" pt={14}>
+            <Container maxw="container.xl" pt={14}>
                 <NoSsr>
                     <VoxelTotoro />
                 </NoSsr>

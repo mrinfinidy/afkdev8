@@ -20,9 +20,9 @@ import { IoLogoGithub, IoMail, IoLogoLinkedin, IoLogoEuro } from 'react-icons/io
 const Page = () => {
   return (
     <Layout>
-      <Container4k maxW="4k">
+      <Container4k maxw="4k">
         <Box
-          maxW="4k"
+          maxw="4k"
           borderRadius="lg"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           p={3}
