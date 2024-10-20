@@ -15,7 +15,7 @@ import Container4k from '../components/layouts/container'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BulletSection, BulletPoint } from '../components/bullet'
-import { IoLogoGithub, IoMail, IoLogoLinkedin, IoLogoEuro, FaYoutube } from 'react-icons/io5'
+import { IoLogoGithub, IoMail, IoLogoLinkedin, IoLogoEuro, IoLogoYoutube } from 'react-icons/io5'
 
 const Page = () => {
   return (
@@ -121,16 +121,28 @@ const Page = () => {
           </Heading>
           <List>
             <ListItem>
-                    <Link href="https://github.com/mrinfinidy/" target="_blank">
-                      <Button
-                        variant="ghost"
-                        colorScheme="teal"
-                        leftIcon={<IoLogoGithub />}
-		      		  _focus={{ boxShadow: "none" }}
-                      >
-                        afkdev8 (mr.infinidy)
-                      </Button>
-                    </Link>
+              <Link href="https://github.com/mrinfinidy/" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoGithub />}
+		      		    _focus={{ boxShadow: "none" }}
+                >
+                  afkdev8 (mr.infinidy)
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.youtube.com/channel/UCr2rewTU9FWA17Tft891-kw" target="_blank">
+                <Button
+                  variant='ghost'
+                  colorScheme='teal'
+                  leftIcon={<IoLogoYoutube />}
+                  _focus={{ boxShadow: "none" }}
+                >
+                  YouTube
+                </Button>
+              </Link>
             </ListItem>
 		      	<ListItem>
 		      		<Link href="https://www.linkedin.com/in/amon-f-61720328b/" target="_blank">
