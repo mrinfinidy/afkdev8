@@ -2,7 +2,7 @@ import { Container } from "@chakra-ui/react"
 
 const Container4k = ({ children }) => {
     return (
-      <Container maxw="4k">
+      <Container maxW="4k">
           {children}
       </Container>
     )

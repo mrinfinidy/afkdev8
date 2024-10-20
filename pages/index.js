@@ -20,9 +20,9 @@ import { IoLogoGithub, IoMail, IoLogoLinkedin, IoLogoEuro, IoLogoYoutube } from 
 const Page = () => {
   return (
     <Layout>
-      <Container4k maxw="4k">
+      <Container4k maxW="4k">
         <Box
-          maxw="4k"
+          maxW="4k"
           borderRadius="lg"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           p={3}
