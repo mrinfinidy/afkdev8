@@ -15,7 +15,7 @@ import Container4k from '../components/layouts/container'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BulletSection, BulletPoint } from '../components/bullet'
-import { IoLogoGithub, IoMail, IoLogoLinkedin, IoLogoEuro } from 'react-icons/io5'
+import { IoLogoGithub, IoMail, IoLogoLinkedin, IoLogoEuro, FaYoutube } from 'react-icons/io5'
 
 const Page = () => {
   return (
@@ -121,55 +121,54 @@ const Page = () => {
           </Heading>
           <List>
             <ListItem>
-              <Link href="https://github.com/mrinfinidy/" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<IoLogoGithub />}
-				  _focus={{ boxShadow: "none" }}
-                >
-                  afkdev8 (mr.infinidy)
-                </Button>
+                    <Link href="https://github.com/mrinfinidy/" target="_blank">
+                      <Button
+                        variant="ghost"
+                        colorScheme="teal"
+                        leftIcon={<IoLogoGithub />}
+		      		  _focus={{ boxShadow: "none" }}
+                      >
+                        afkdev8 (mr.infinidy)
+                      </Button>
+                    </Link>
+            </ListItem>
+		      	<ListItem>
+		      		<Link href="https://www.linkedin.com/in/amon-f-61720328b/" target="_blank">
+		      			<Button
+		      				variant='ghost'
+		      				colorScheme='teal'
+		      				leftIcon={<IoLogoLinkedin />}
+		      				_focus={{ boxShadow: "none" }}
+		      			>
+		      				linkedIn	
+		      			</Button>
+		      		</Link>
+		      	</ListItem>
+            <ListItem>
+                <Link href="https://www.buymeacoffee.com/afkdev8" target="_blank">
+                  <Button
+                    variant='ghost'
+                    colorScheme='teal'
+                    leftIcon={<IoLogoEuro />}
+		      	        _focus={{ boxShadow: "none" }}
+                  >
+                    Buy me a coffee
+                  </Button>
               </Link>
             </ListItem>
-			<ListItem>
-				<Link href="https://www.linkedin.com/in/amon-f-61720328b/" target="_blank">
-					<Button
-						variant='ghost'
-						colorScheme='teal'
-						leftIcon={<IoLogoLinkedin />}
-						_focus={{ boxShadow: "none" }}
-					>
-						linkedIn	
-					</Button>
-				</Link>
-			</ListItem>
-                        <ListItem>
-                            <Link href="https://www.buymeacoffee.com/afkdev8" target="_blank">
-                            <Button
-                                variant='ghost'
-                                colorScheme='teal'
-                                leftIcon={<IoLogoEuro />}
-								_focus={{ boxShadow: "none" }}
-                            >
-                                Buy me a coffee
-                            </Button>
-                            </Link>
-                        </ListItem>
-			<ListItem>
-				<Link href='mailto:afkdev8@gmail.com'>
-					<Button
-						variant='ghost'
-						colorScheme='teal'
-						leftIcon={<IoMail />}
-						_focus={{ boxShadow: "none" }}
-					>
-						afkdev8@gmail.com
-					</Button>
-				</Link>
-			</ListItem>
+		      	<ListItem>
+		      		<Link href='mailto:afkdev8@gmail.com'>
+		      			<Button
+		      				variant='ghost'
+		      				colorScheme='teal'
+		      				leftIcon={<IoMail />}
+		      				_focus={{ boxShadow: "none" }}
+		      			>
+		      				afkdev8@gmail.com
+		      			</Button>
+		      		</Link>
+		      	</ListItem>
           </List>
-
           <Box align="center" my={4}>
             <NextLink href="/posts" scroll={false}>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
