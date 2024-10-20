@@ -96,6 +96,10 @@ const Page = () => {
             <BulletPoint>2022</BulletPoint>
             Created this website.
           </BulletSection>
+          <BulletSection>
+            <BulletPoint>2024</BulletPoint>
+            Created my YouTube channel.
+          </BulletSection>
         </Section>
 
         <Section delay={0.3}>
