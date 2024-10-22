@@ -44,7 +44,7 @@ const Works = () => {
           <Section delay={0.1}>
             <WorkGridItem
               id="ytsChrome"
-              title="YouTubeSearch Chrome"
+              title="Video Quick Search Chrome"
               thumbnail={thumbYTSC}
             >
               A Chrome extension that adds right-click YouTube search to the
@@ -55,7 +55,7 @@ const Works = () => {
           <Section delay={0.1}>
             <WorkGridItem
               id="ytsFirefox"
-              title="YouTubeSearch Firefox"
+              title="YouTube Quick Search Firefox"
               thumbnail={thumbYTSF}
             >
               A Firefox add-on that adds right-click YouTube search to the

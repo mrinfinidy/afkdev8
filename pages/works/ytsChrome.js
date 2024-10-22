@@ -10,7 +10,7 @@ const Work = () => {
         <Layout title="">
             <Container4k>
                 <Title>
-                    YouTube Quick Search Chrome <Badge>2020-</Badge>
+                    Video Quick Search Chrome (for YouTube)&nbsp;<Badge>2020-</Badge>
                 </Title>
                 <P>
                     A Chrome extension that lets you search highlighted text directly
