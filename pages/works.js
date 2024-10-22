@@ -43,7 +43,7 @@ const Works = () => {
           </Section>
           <Section delay={0.1}>
             <WorkGridItem
-              id="ytsChrome"
+              id="ytqsChrome"
               title="Video Quick Search Chrome"
               thumbnail={thumbYTQSC}
             >
@@ -54,7 +54,7 @@ const Works = () => {
 
           <Section delay={0.1}>
             <WorkGridItem
-              id="ytsFirefox"
+              id="ytqsFirefox"
               title="YouTube Quick Search Firefox"
               thumbnail={thumbYTQSF}
             >
