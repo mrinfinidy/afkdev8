@@ -6,12 +6,12 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import Container4k from '../../components/layouts/container'
 
-import uploadModel from '../../public/images/works/uploadModel.png'
-import uploadModelSelected from '../../public/images/works/uploadModelSelected.png'
-import saekiSideMenu from '../../public/images/works/saekiSideMenu.png'
-import prepareStep1 from '../../public/images/works/prepareStep1.png'
-import prepareStep2 from '../../public/images/works/prepareStep2.png'
-import quotes from '../../public/images/works/quotes.png'
+import uploadModel from '../../public/images/works/saeki/uploadModel.png'
+import uploadModelSelected from '../../public/images/works/saeki/uploadModelSelected.png'
+import saekiSideMenu from '../../public/images/works/saeki/saekiSideMenu.png'
+import prepareStep1 from '../../public/images/works/saeki/prepareStep1.png'
+import prepareStep2 from '../../public/images/works/saeki/prepareStep2.png'
+import quotes from '../../public/images/works/saeki/quotes.png'
 
 const Work = () => {
 	return (
@@ -27,37 +27,37 @@ const Work = () => {
 					<GridItem
 						title="Upload Page"	
 						thumbnail={uploadModel}
-						href="/images/works/uploadModel.png"
+						href="/images/works/saeki/uploadModel.png"
 					>
 					</GridItem>
 					<GridItem
 						title="Side Menu"
 						thumbnail={saekiSideMenu}
-						href="/images/works/saekiSideMenu.png"
+						href="/images/works/saeki/saekiSideMenu.png"
 					>
 					</GridItem>
 					<GridItem
 						title="Model Selected"
 						thumbnail={uploadModelSelected}
-						href="/images/works/uploadModelSelected.png"
+						href="/images/works/saeki/uploadModelSelected.png"
 					>
 					</GridItem>
 					<GridItem
 						title="Prepare Model Step 1"	
 						thumbnail={prepareStep1}
-						href="/images/works/prepareStep1.png"
+						href="/images/works/saeki/prepareStep1.png"
 					>
 					</GridItem>
 					<GridItem
 						title="Prepare Model Step 2"
 						thumbnail={prepareStep2}
-						href="/images/works/prepareStep2.png"
+						href="/images/works/saeki/prepareStep2.png"
 					>
 					</GridItem>
 					<GridItem
 						title="Quotes Page"
 						thumbnail={quotes}
-						href="/images/works/quotes.png"
+						href="/images/works/saeki/quotes.png"
 					>
 					</GridItem>
 				</SimpleGrid>

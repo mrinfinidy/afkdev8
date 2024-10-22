@@ -5,10 +5,10 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import Container4k from '../../components/layouts/container'
 
-import printCase from '../../public/images/posts/printCase.jpg'
-import diodesSoldered from '../../public/images/posts/diodesSoldered.jpg'
-import switchesInstalled from '../../public/images/posts/switchesInstalled.jpg'
-import caseAssembled from '../../public/images/posts/caseAssembled.jpg'
+import printCase from '../../public/images/posts/ergodash/printCase.jpg'
+import diodesSoldered from '../../public/images/posts/ergodash/diodesSoldered.jpg'
+import switchesInstalled from '../../public/images/posts/ergodash/switchesInstalled.jpg'
+import caseAssembled from '../../public/images/posts/ergodash/caseAssembled.jpg'
 
 const ErgoDash = () => {
 	return (
@@ -27,7 +27,7 @@ const ErgoDash = () => {
 					<GridItem 
 						title="3D Print Switch Case"
 						thumbnail={printCase}
-						href="/images/posts/printCase.jpg"
+						href="/images/posts/ergodash/printCase.jpg"
 					>
 						I 3D printed all the case parts like the switch plate and
 						bottom plate. You can find various models on Thingiverse.
@@ -35,7 +35,7 @@ const ErgoDash = () => {
 					<GridItem 
 						title="Solder Diodes on PCB"
 						thumbnail={diodesSoldered}
-						href="/images/posts/diodesSoldered.jpg"
+						href="/images/posts/ergodash/diodesSoldered.jpg"
 					>
 						Here you can see the diodes and backlight LEDs soldered
 						on the backside of the PCB.
@@ -43,14 +43,14 @@ const ErgoDash = () => {
 					<GridItem 
 						title="Install and Solder Switches"
 						thumbnail={switchesInstalled}	
-						href="/images/posts/switchesInstalled.jpg"
+						href="/images/posts/ergodash/switchesInstalled.jpg"
 					>
 						It took me about two afternoons to finish soldering everything.		
 					</GridItem>
 					<GridItem 
 						title="Assemble Case"
 						thumbnail={caseAssembled}
-						href="/images/posts/caseAssembled.jpg"
+						href="/images/posts/ergodash/caseAssembled.jpg"
 					>
 						It was actually not that easy to get 6mm spacers (fast).
 						They are used to create the space between switch and bottom plate.

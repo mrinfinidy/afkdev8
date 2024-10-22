@@ -1,6 +1,6 @@
 import { Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, Meta } from '../../components/work'
+import { Title, Meta, WorkImage } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import Container4k from '../../components/layouts/container'
@@ -16,6 +16,7 @@ const Work = () => {
                     A Firefox add-on that lets you search highlighted text directly
                     on YouTube by right clicking it and selecting &apos;Search on YouTube&apos;.
                 </P>
+                <WorkImage src="/images/works/youtubeQuickSearchFirefox/youtubeQuickSearchFirefox.png" alt="YouTube Quick Search Firefox Preview"/>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>

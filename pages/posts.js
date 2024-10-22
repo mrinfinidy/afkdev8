@@ -4,7 +4,7 @@ import Container4k from '../components/layouts/container'
 import Section from '../components/section'
 import { PostGridItem } from '../components/grid-item'
 
-import thumbErgoDash from '../public/images/posts/caseAssembled.jpg'
+import thumbErgoDash from '../public/images/posts/ergodash/caseAssembled.jpg'
 import thumbStableDiffusion from '../public/images/posts/stable-diffusion/highTechDystopia4.jpg'
 import thumbTimetable from '../public/images/posts/timetable/timetable-berlin.jpg'
 import thumbFakeNativeApp from '../public/images/posts/fake-native-app/firefox.png'

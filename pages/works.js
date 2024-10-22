@@ -4,12 +4,12 @@ import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Container4k from '../components/layouts/container'
 
-import thumbSaeki from '../public/images/works/thumbSaeki.png'
-import thumbSaekiLight from '../public/images/works/thumbSaekiLight.png'
-import thumbStay4Tree from '../public/images/works/thumbStay4Tree.png'
-import thumbYTSC from '../public/images/works/thumbYTSC.png'
-import thumbYTSF from '../public/images/works/thumbYTSF.png'
-import thumbAutoFocus from '../public/images/works/thumbAutoFocus.png'
+import thumbSaeki from '../public/images/works/thumbnails/thumbSaeki.png'
+import thumbSaekiLight from '../public/images/works/thumbnails/thumbSaekiLight.png'
+import thumbStay4Tree from '../public/images/works/thumbnails/thumbStay4Tree.png'
+import thumbYTQSC from '../public/images/works/thumbnails/thumbYTQSC.png'
+import thumbYTQSF from '../public/images/works/thumbnails/thumbYTQSF.png'
+import thumbAutoFocus from '../public/images/works/thumbnails/thumbAutoFocus.png'
 
 const Works = () => {
 	const { colorMode } = useColorMode()
@@ -45,7 +45,7 @@ const Works = () => {
             <WorkGridItem
               id="ytsChrome"
               title="Video Quick Search Chrome"
-              thumbnail={thumbYTSC}
+              thumbnail={thumbYTQSC}
             >
               A Chrome extension that adds right-click YouTube search to the
               browser.
@@ -56,7 +56,7 @@ const Works = () => {
             <WorkGridItem
               id="ytsFirefox"
               title="YouTube Quick Search Firefox"
-              thumbnail={thumbYTSF}
+              thumbnail={thumbYTQSF}
             >
               A Firefox add-on that adds right-click YouTube search to the
               browser.
