@@ -9,7 +9,7 @@ import {
   ListItem,
   useColorModeValue
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import Container4k from '../components/layouts/container'
 import Section from '../components/section'
@@ -63,17 +63,34 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            You can check out my projects on the &quot;Works&quot; page. Or just
-            click on &quot;My portfolio&quot; below to go there. They are mainly
-            hobby projects like the browser add-ons and the Android app that was
-            created during a hackathon. One of my most significant works has been with{' '}
-            <Link href="https://saeki.ch/" _focus={{ boxShadow: "none" }} >SAEKI Robotics</Link> where we
-            developed a digital manufacturing service.
+            I work as a developer at&nbsp;
+            <Link
+              href="https://nesto-software.de"
+              _focus={{ boxShadow: "none" }}
+              target="_blank"
+            >
+              Nesto Software <ExternalLinkIcon />
+            </Link>
+            .
+            I do tasks from various fields but most of them are in IoT development, software development and data engineering.
             <br />
-            LINKS:{' '}
+            There are no examples I can share on this page, but you can check out my other works on the
+            &quot;Works&quot; page. Just click on &quot;My portfolio&quot; below or &quot;Works&quot; in the menu.
+            There you can find projects like my browser add-ons and an Android app that was
+            created during a hackathon. One of my most significant works has been with&nbsp;
+            <Link 
+              href="https://saeki.ch/"
+              _focus={{ boxShadow: "none" }}
+              target="_blank"
+            >
+              SAEKI Robotics <ExternalLinkIcon />
+            </Link>
+            &nbsp;where we
+            developed a digital manufacturing service (
             <NextLink href="/works/sdx-app">
               <Link _focus={{ boxShadow: "none" }}>SAEKI Web App</Link>
             </NextLink>
+            ).
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
