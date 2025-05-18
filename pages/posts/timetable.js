@@ -20,6 +20,15 @@ const Timetable = () => {
 					which is connected to a monitor. It can be useful to have a
 					display showing public transport connections close to your
 					office for example. Follow this to make your own display table.
+          You can also reference the code on my&nbsp;
+          <Link
+            href="https://github.com/mrinfinidy/timetable-showcase"
+            target="_blank"
+          >
+            GitHub repository
+            <ExternalLinkIcon />
+          </Link>
+          .
 					<br />
 					<WorkImage src='/images/posts/timetable/timetable-berlin.jpg' />
 				</P>
