@@ -9,6 +9,7 @@ import thumbStableDiffusion from '../public/images/posts/stable-diffusion/highTe
 import thumbTimetable from '../public/images/posts/timetable/timetable-berlin.jpg'
 import thumbFakeNativeApp from '../public/images/posts/fake-native-app/firefox.png'
 import thumbYoutubeChannel from '../public/images/posts/youtube-channel/youtube-channel-profile.jpg'
+import thumbNixOs from '../public/images/posts/nixos/neofetch-nixos.png'
 
 const Posts = () => (
     <Layout title="">
@@ -23,6 +24,11 @@ const Posts = () => (
               title="My YouTube Channel"
               thumbnail={thumbYoutubeChannel}
             />
+            <PostGridItem
+              id="nixos"
+              title="NixOS"
+              thumbnail={thumbNixOs}
+            />
 				    <PostGridItem 
 					    id="ergodash"
 					    title="ErgoDash"
@@ -33,16 +39,16 @@ const Posts = () => (
 				    	title="Timetable"
 				    	thumbnail={thumbTimetable}
 				    />
-            <PostGridItem
-              id="fake-native-app"
-              title='"Fake" Native App'
-              thumbnail={thumbFakeNativeApp}
-            />
 				    <PostGridItem 
 				    	id="stable-diffusion"
 				    	title="Stable Diffusion"
 				    	thumbnail={thumbStableDiffusion}
 				    />
+            <PostGridItem
+              id="fake-native-app"
+              title='"Fake" Native App'
+              thumbnail={thumbFakeNativeApp}
+            />
           </SimpleGrid>
         </Section>
       </Container4k>
