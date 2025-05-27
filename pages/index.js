@@ -78,7 +78,7 @@ const Page = () => {
             &quot;Works&quot; page. Just click on &quot;My portfolio&quot; below or &quot;Works&quot; in the menu.
             There you can find projects like my browser add-ons and an Android app that was
             created during a hackathon. One of my most significant works has been with&nbsp;
-            <Link 
+            <Link
               href="https://saeki.ch/"
               _focus={{ boxShadow: "none" }}
               target="_blank"
@@ -127,8 +127,8 @@ const Page = () => {
             Ghibli,{' '}
             <Link
               href="https://www.youtube.com/watch?v=TKy0Lyl4g-s"
-              target="_blank" 
-			  _focus={{ boxShadow: "none" }}
+              target="_blank"
+              _focus={{ boxShadow: "none" }}
             >
               Music
             </Link>
@@ -147,7 +147,7 @@ const Page = () => {
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<IoLogoGithub />}
-		      		    _focus={{ boxShadow: "none" }}
+                  _focus={{ boxShadow: "none" }}
                 >
                   afkdev8 (mr.infinidy)
                 </Button>
@@ -165,42 +165,42 @@ const Page = () => {
                 </Button>
               </Link>
             </ListItem>
-		      	<ListItem>
-		      		<Link href="https://www.linkedin.com/in/amon-f-61720328b/" target="_blank">
-		      			<Button
-		      				variant='ghost'
-		      				colorScheme='teal'
-		      				leftIcon={<IoLogoLinkedin />}
-		      				_focus={{ boxShadow: "none" }}
-		      			>
-		      				linkedIn	
-		      			</Button>
-		      		</Link>
-		      	</ListItem>
             <ListItem>
-                <Link href="https://www.buymeacoffee.com/afkdev8" target="_blank">
-                  <Button
-                    variant='ghost'
-                    colorScheme='teal'
-                    leftIcon={<IoLogoEuro />}
-		      	        _focus={{ boxShadow: "none" }}
-                  >
-                    Buy me a coffee
-                  </Button>
+              <Link href="https://www.linkedin.com/in/amon-f-61720328b/" target="_blank">
+                <Button
+                  variant='ghost'
+                  colorScheme='teal'
+                  leftIcon={<IoLogoLinkedin />}
+                  _focus={{ boxShadow: "none" }}
+                >
+                  linkedIn
+                </Button>
               </Link>
             </ListItem>
-		      	<ListItem>
-		      		<Link href='mailto:afkdev8@gmail.com'>
-		      			<Button
-		      				variant='ghost'
-		      				colorScheme='teal'
-		      				leftIcon={<IoMail />}
-		      				_focus={{ boxShadow: "none" }}
-		      			>
-		      				afkdev8@gmail.com
-		      			</Button>
-		      		</Link>
-		      	</ListItem>
+            <ListItem>
+              <Link href="https://www.buymeacoffee.com/afkdev8" target="_blank">
+                <Button
+                  variant='ghost'
+                  colorScheme='teal'
+                  leftIcon={<IoLogoEuro />}
+                  _focus={{ boxShadow: "none" }}
+                >
+                  Buy me a coffee
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href='mailto:mail@afkdev8.com'>
+                <Button
+                  variant='ghost'
+                  colorScheme='teal'
+                  leftIcon={<IoMail />}
+                  _focus={{ boxShadow: "none" }}
+                >
+                  mail@afkdev8.com
+                </Button>
+              </Link>
+            </ListItem>
           </List>
           <Box align="center" my={4}>
             <NextLink href="/posts" scroll={false}>
