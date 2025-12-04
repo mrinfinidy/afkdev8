@@ -15,7 +15,13 @@ import Container4k from '../components/layouts/container'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BulletSection, BulletPoint } from '../components/bullet'
-import { IoLogoGithub, IoMail, IoLogoLinkedin, IoLogoEuro, IoLogoYoutube } from 'react-icons/io5'
+import {
+  IoLogoGithub,
+  IoMail,
+  IoLogoLinkedin,
+  IoLogoEuro,
+  IoLogoYoutube
+} from 'react-icons/io5'
 
 const Page = () => {
   return (
@@ -66,14 +72,21 @@ const Page = () => {
             You can check out my projects on the &quot;Works&quot; page. Or just
             click on &quot;My portfolio&quot; below to go there. They are mainly
             hobby projects like the browser add-ons and the Android app that was
-            created during a hackathon. One of my most significant works has been with{' '}
-            <Link href="https://saeki.ch/" _focus={{ boxShadow: "none" }} >SAEKI Robotics</Link> where we
-            developed a digital manufacturing service.
+            created during a hackathon. One of my most significant works has
+            been with{' '}
+            <Link href="https://saeki.ch/" _focus={{ boxShadow: 'none' }}>
+              SAEKI Robotics
+            </Link>{' '}
+            where we developed a digital manufacturing service.
             <br />
             LINKS:{' '}
-            <NextLink href="/works/sdx-app">
-              <Link _focus={{ boxShadow: "none" }}>SAEKI Web App</Link>
-            </NextLink>
+            <Link
+              as={NextLink}
+              href="/works/sdx=app"
+              _focus={{ boxShadow: 'none' }}
+            >
+              SAEKI Web App
+            </Link>
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -110,8 +123,8 @@ const Page = () => {
             Ghibli,{' '}
             <Link
               href="https://www.youtube.com/watch?v=TKy0Lyl4g-s"
-              target="_blank" 
-			  _focus={{ boxShadow: "none" }}
+              target="_blank"
+              _focus={{ boxShadow: 'none' }}
             >
               Music
             </Link>
@@ -130,60 +143,66 @@ const Page = () => {
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<IoLogoGithub />}
-		      		    _focus={{ boxShadow: "none" }}
+                  _focus={{ boxShadow: 'none' }}
                 >
                   afkdev8 (mr.infinidy)
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://www.youtube.com/channel/UCr2rewTU9FWA17Tft891-kw" target="_blank">
+              <Link
+                href="https://www.youtube.com/channel/UCr2rewTU9FWA17Tft891-kw"
+                target="_blank"
+              >
                 <Button
-                  variant='ghost'
-                  colorScheme='teal'
+                  variant="ghost"
+                  colorScheme="teal"
                   leftIcon={<IoLogoYoutube />}
-                  _focus={{ boxShadow: "none" }}
+                  _focus={{ boxShadow: 'none' }}
                 >
                   YouTube
                 </Button>
               </Link>
             </ListItem>
-		      	<ListItem>
-		      		<Link href="https://www.linkedin.com/in/amon-f-61720328b/" target="_blank">
-		      			<Button
-		      				variant='ghost'
-		      				colorScheme='teal'
-		      				leftIcon={<IoLogoLinkedin />}
-		      				_focus={{ boxShadow: "none" }}
-		      			>
-		      				linkedIn	
-		      			</Button>
-		      		</Link>
-		      	</ListItem>
             <ListItem>
-                <Link href="https://www.buymeacoffee.com/afkdev8" target="_blank">
-                  <Button
-                    variant='ghost'
-                    colorScheme='teal'
-                    leftIcon={<IoLogoEuro />}
-		      	        _focus={{ boxShadow: "none" }}
-                  >
-                    Buy me a coffee
-                  </Button>
+              <Link
+                href="https://www.linkedin.com/in/amon-f-61720328b/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoLinkedin />}
+                  _focus={{ boxShadow: 'none' }}
+                >
+                  linkedIn
+                </Button>
               </Link>
             </ListItem>
-		      	<ListItem>
-		      		<Link href='mailto:afkdev8@gmail.com'>
-		      			<Button
-		      				variant='ghost'
-		      				colorScheme='teal'
-		      				leftIcon={<IoMail />}
-		      				_focus={{ boxShadow: "none" }}
-		      			>
-		      				afkdev8@gmail.com
-		      			</Button>
-		      		</Link>
-		      	</ListItem>
+            <ListItem>
+              <Link href="https://www.buymeacoffee.com/afkdev8" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoEuro />}
+                  _focus={{ boxShadow: 'none' }}
+                >
+                  Buy me a coffee
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="mailto:afkdev8@gmail.com">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoMail />}
+                  _focus={{ boxShadow: 'none' }}
+                >
+                  afkdev8@gmail.com
+                </Button>
+              </Link>
+            </ListItem>
           </List>
           <Box align="center" my={4}>
             <NextLink href="/posts" scroll={false}>
