@@ -1,18 +1,20 @@
-import { Heading, SimpleGrid, useColorMode } from '@chakra-ui/react'
-import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
-import Layout from '../components/layouts/article'
-import Container4k from '../components/layouts/container'
+import { Heading, SimpleGrid, useColorMode } from "@chakra-ui/react";
+import Section from "../components/section";
+import { WorkGridItem } from "../components/grid-item";
+import Layout from "../components/layouts/article";
+import Container4k from "../components/layouts/container";
 
-import thumbSaeki from '../public/images/works/thumbnails/thumbSaeki.png'
-import thumbSaekiLight from '../public/images/works/thumbnails/thumbSaekiLight.png'
-import thumbStay4Tree from '../public/images/works/thumbnails/thumbStay4Tree.png'
-import thumbYTQSC from '../public/images/works/thumbnails/thumbYTQSC.png'
-import thumbYTQSF from '../public/images/works/thumbnails/thumbYTQSF.png'
-import thumbAutoFocus from '../public/images/works/thumbnails/thumbAutoFocus.png'
+import thumbQRCodeGeneratorLight from "../public/images/works/thumbnails/thumbQrcodeAfkdev8Light.png";
+import thumbQRCodeGeneratorDark from "../public/images/works/thumbnails/thumbQrcodeAfkdev8Dark.png";
+import thumbSaeki from "../public/images/works/thumbnails/thumbSaeki.png";
+import thumbSaekiLight from "../public/images/works/thumbnails/thumbSaekiLight.png";
+import thumbStay4Tree from "../public/images/works/thumbnails/thumbStay4Tree.png";
+import thumbYTQSC from "../public/images/works/thumbnails/thumbYTQSC.png";
+import thumbYTQSF from "../public/images/works/thumbnails/thumbYTQSF.png";
+import thumbAutoFocus from "../public/images/works/thumbnails/thumbAutoFocus.png";
 
 const Works = () => {
-	const { colorMode } = useColorMode()
+  const { colorMode } = useColorMode();
 
   return (
     <Layout>
@@ -24,12 +26,25 @@ const Works = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem
+              id="qrCodeGenerator"
+              title="QR Code Pretty"
+              thumbnail={
+                colorMode === "light"
+                  ? thumbQRCodeGeneratorLight
+                  : thumbQRCodeGeneratorDark
+              }
+            >
+              A CLI tool to generate beautiful customizable QR Codes.
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
               id="sdx-app"
               title="SAEKI Web App"
-              thumbnail={colorMode === 'light' ? thumbSaekiLight : thumbSaeki}
+              thumbnail={colorMode === "light" ? thumbSaekiLight : thumbSaeki}
             >
               An online digital manufacturing service to order a 3D printed
-              object. &#x28;demo&#x29;
+              object.
             </WorkGridItem>
           </Section>
           <Section>
@@ -74,7 +89,7 @@ const Works = () => {
         </SimpleGrid>
       </Container4k>
     </Layout>
-  )
-}
+  );
+};
 
-export default Works
+export default Works;
