@@ -1,8 +1,8 @@
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 export function loadGLTFModel (
-    scene,
-    glbPath,
+    scene: any,
+    glbPath: any,
     options = { receiveShadow: true, castShadow: true }
 ) {
     const { receiveShadow, castShadow } = options
@@ -11,7 +11,7 @@ export function loadGLTFModel (
 
         loader.load(
             glbPath,
-            gltf => {
+            (gltf: any) => {
                 const obj = gltf.scene
                 obj.name = 'totoro'
                 obj.position.y = 0
@@ -20,7 +20,7 @@ export function loadGLTFModel (
                 obj.castShadow = castShadow
                 scene.add(obj)
 
-                obj.traverse(function (child) {
+                obj.traverse(function (child: any) {
                     if (child.isMesh) {
                         child.castShadow = castShadow
                         child.receiveShadow = receiveShadow
@@ -29,9 +29,9 @@ export function loadGLTFModel (
                 resolve(obj)
             },
             undefined,
-            function(error) {
+            function(error: any) {
                 reject(error)
             }
         )
-    })
+    });
 }

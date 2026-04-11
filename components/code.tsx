@@ -1,6 +1,9 @@
 import { Code, useColorMode } from '@chakra-ui/react'
 
-const CodeStyled = ({ children, mIndent }) => {
+const CodeStyled = ({
+    children,
+    mIndent
+}: any) => {
 	const { colorMode } = useColorMode()
 	const colorScheme = colorMode == 'light' ? 'teal' : 'purple'
 

@@ -4,15 +4,15 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
 
-function easeOutCirc(x) {
+function easeOutCirc(x: any) {
     return (Math.sqrt(1 - Math.pow(x - 1, 4)))
 }
 
 const VoxelTotoro = () => {
-    const refContainer = useRef()
+    const refContainer = useRef<HTMLDivElement>(null)
     const [loading, setLoading] = useState(true)
-    const [renderer, setRenderer] = useState()
-    const [_camera, setCamera] = useState()
+    const [renderer, setRenderer] = useState<THREE.WebGLRenderer>()
+    const [_camera, setCamera] = useState<THREE.OrthographicCamera>()
     const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
     const [initialCameraPosition] = useState(
         new THREE.Vector3(
@@ -22,7 +22,7 @@ const VoxelTotoro = () => {
         )
     )
     const [scene] = useState(new THREE.Scene())
-    const [_controls, setControls] = useState()
+    const [_controls, setControls] = useState<OrbitControls>()
 
     const handleWindowResize = useCallback(() => {
         const { current: container } = refContainer
@@ -82,7 +82,7 @@ const VoxelTotoro = () => {
                 setLoading(false)
             })
 
-            let req = null
+            let req: any = null
             let frame = 0
             const animate = () => {
                 req = requestAnimationFrame(animate)

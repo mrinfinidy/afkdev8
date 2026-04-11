@@ -7,11 +7,14 @@ const StyledDiv = chakra(motion.div, {
     }
 })
 
-const Section = ({ children, delay=0 }) => (
+const Section = ({
+    children,
+    delay=0
+}: any) => (
     <StyledDiv
         initial={{ y: 10, opacity: 0 }}
         animate={{ y:0, opacity: 1 }}
-        transition={{ duration: 0.3, delay }}
+        {...{ transition: { duration: 0.3, delay } } as any}
         mb={6}
     >
         {children}

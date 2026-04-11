@@ -33,7 +33,7 @@ const Page = () => {
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           p={3}
           mb={6}
-          align="center"
+          textAlign="center"
         >
           Hello I&apos;m afkdev8!
         </Box>
@@ -49,7 +49,7 @@ const Page = () => {
             flexShrink={0}
             mt={{ base: 4, md: 0 }}
             ml={{ md: 6 }}
-            align="center"
+            textAlign="center"
           >
             <Image
               borderColor="whiteAlpha.800"
@@ -105,7 +105,7 @@ const Page = () => {
             </Link>
             ).
           </Paragraph>
-          <Box align="center" my={4}>
+          <Box textAlign="center" my={4}>
             <Link as={NextLink} href="/works">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 My portfolio
@@ -221,7 +221,7 @@ const Page = () => {
               </Link>
             </ListItem>
           </List>
-          <Box align="center" my={4}>
+          <Box textAlign="center" my={4}>
             <NextLink href="/posts" scroll={false}>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 Posts

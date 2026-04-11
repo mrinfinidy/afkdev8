@@ -8,15 +8,17 @@ const variants = {
     exit: { opacity: 0, x: 0, y: 20 }
 }
 
-const Layout = ({ children, title }) => (
+const Layout = ({
+    children,
+    title
+}: any) => (
     <motion.article
       initial="hidden"
       animate="enter"
       exit="exit"
       variants={variants}
-      transition={{ duration: 0.15, type: 'easeInOut' }}
-      style={{ position: 'relative' }}
-      maxW="4k"
+      transition={{ duration: 0.15, ease: 'easeInOut' }}
+      style={{ position: 'relative', maxWidth: '4k' }}
     >
         <>
             {title && (

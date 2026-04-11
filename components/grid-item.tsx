@@ -3,8 +3,13 @@ import Image from 'next/image'
 import { Box, Text, LinkBox, LinkOverlay, useColorMode } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
-export const GridItem = ({ children, href, title, thumbnail }) => (
-    <Box w="100%" align="center">
+export const GridItem = ({
+    children,
+    href,
+    title,
+    thumbnail
+}: any) => (
+    <Box w="100%" textAlign="center">
         <LinkBox cursor="pointer">
             <Image
                 src={thumbnail}
@@ -25,8 +30,13 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
     </Box>
 )
 
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-    <Box w="100%" align="center">
+export const WorkGridItem = ({
+    children,
+    id,
+    title,
+    thumbnail
+}: any) => (
+    <Box w="100%" textAlign="center">
         <NextLink href={`/works/${id}`}>
             <LinkBox cursor="pointer">
                 <Image
@@ -48,8 +58,13 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
     </Box>
 )
 
-export const PostGridItem = ({ children, id, title, thumbnail }) => (
-    <Box w="100%" align="center">
+export const PostGridItem = ({
+    children,
+    id,
+    title,
+    thumbnail
+}: any) => (
+    <Box w="100%" textAlign="center">
         <NextLink href={`/posts/${id}`}>
             <LinkBox cursor="pointer">
                 <Image
