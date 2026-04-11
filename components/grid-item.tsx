@@ -37,22 +37,20 @@ export const WorkGridItem = ({
     thumbnail
 }: any) => (
     <Box w="100%" textAlign="center">
-        <LinkBox cursor="pointer">
+        <NextLink href={`/works/${id}`} style={{ cursor: 'pointer' }}>
             <Image
                 src={thumbnail}
                 alt={title}
                 className="grid-item-thumbnail"
                 placeholder="blur"
             />
-            <LinkOverlay as={NextLink} href={`/works/${id}`}>
-                <Text mt={2} fontSize={20}>
-                    {title}
-                </Text>
-            </LinkOverlay>
+            <Text mt={2} fontSize={20}>
+                {title}
+            </Text>
             <Text fontSize={14}>
                 {children}
             </Text>
-        </LinkBox>
+        </NextLink>
     </Box>
 )
 
@@ -63,22 +61,20 @@ export const PostGridItem = ({
     thumbnail
 }: any) => (
     <Box w="100%" textAlign="center">
-        <LinkBox cursor="pointer">
+        <NextLink href={`/posts/${id}`} style={{ cursor: 'pointer' }}>
             <Image
                 src={thumbnail}
                 alt={title}
                 className="grid-item-thumbnail"
                 placeholder="blur"
             />
-            <LinkOverlay as={NextLink} href={`/posts/${id}`}>
-                <Text mt={2} fontSize={20}>
-                    {title}
-                </Text>
-            </LinkOverlay>
+            <Text mt={2} fontSize={20}>
+                {title}
+            </Text>
             <Text fontSize={14}>
                 {children}
             </Text>
-        </LinkBox>
+        </NextLink>
     </Box>
 )
 
