@@ -1,4 +1,4 @@
-import NextLink from 'next/link'
+import NextLink from "next/link";
 import {
   Button,
   Box,
@@ -7,21 +7,21 @@ import {
   Link,
   List,
   ListItem,
-  useColorModeValue
-} from '@chakra-ui/react'
-import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
-import Layout from '../components/layouts/article'
-import Container4k from '../components/layouts/container'
-import Section from '../components/section'
-import Paragraph from '../components/paragraph'
-import { BulletSection, BulletPoint } from '../components/bullet'
+  useColorModeValue,
+} from "@chakra-ui/react";
+import { ChevronRightIcon, ExternalLinkIcon } from "@chakra-ui/icons";
+import Layout from "../components/layouts/article";
+import Container4k from "../components/layouts/container";
+import Section from "../components/section";
+import Paragraph from "../components/paragraph";
+import { BulletSection, BulletPoint } from "../components/bullet";
 import {
   IoLogoGithub,
   IoMail,
   IoLogoLinkedin,
   IoLogoEuro,
-  IoLogoYoutube
-} from 'react-icons/io5'
+  IoLogoYoutube,
+} from "react-icons/io5";
 
 const Page = () => {
   return (
@@ -30,7 +30,7 @@ const Page = () => {
         <Box
           maxW="4k"
           borderRadius="lg"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
           p={3}
           mb={6}
           textAlign="center"
@@ -38,7 +38,7 @@ const Page = () => {
           Hello I&apos;m afkdev8!
         </Box>
 
-        <Box display={{ md: 'flex' }}>
+        <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
               afkdev8
@@ -73,24 +73,24 @@ const Page = () => {
             <Link
               as={NextLink}
               href="https://nesto-software.de"
-              _focus={{ boxShadow: 'none' }}
+              _focus={{ boxShadow: "none" }}
               target="_blank"
             >
               Nesto Software <ExternalLinkIcon />
             </Link>
-            . I do tasks from various fields but most of them are in IoT
-            development, software development and data engineering.
+            . I do various tasks like IoT development, software development,
+            data engineering and most recently penetration testing.
             <br />
             There are no examples I can share on this page, but you can check
             out my other works on the &quot;Works&quot; page. Just click on
             &quot;My portfolio&quot; below or &quot;Works&quot; in the menu.
-            There you can find projects like my browser add-ons and an Android
-            app that was created during a hackathon. One of my most significant
-            works has been with&nbsp;
+            There you can find projects like my special QR code generator,
+            browser add-ons and an Android app that was created during a
+            hackathon. One of my most significant works has been with&nbsp;
             <Link
               as={NextLink}
               href="https://saeki.ch/"
-              _focus={{ boxShadow: 'none' }}
+              _focus={{ boxShadow: "none" }}
               target="_blank"
             >
               SAEKI Robotics <ExternalLinkIcon />
@@ -99,7 +99,7 @@ const Page = () => {
             <Link
               as={NextLink}
               href="/works/sdx-app"
-              _focus={{ boxShadow: 'none' }}
+              _focus={{ boxShadow: "none" }}
             >
               SAEKI Web App
             </Link>
@@ -120,7 +120,7 @@ const Page = () => {
           </Heading>
           <BulletSection>
             <BulletPoint>19xx</BulletPoint>
-            Born in ?, Europe.
+            Born in Vienna.
           </BulletSection>
           <BulletSection>
             <BulletPoint>2022</BulletPoint>
@@ -137,11 +137,11 @@ const Page = () => {
             ♡
           </Heading>
           <Paragraph>
-            Ghibli,{' '}
+            Ghibli,{" "}
             <Link
               href="https://www.youtube.com/watch?v=TKy0Lyl4g-s"
               target="_blank"
-              _focus={{ boxShadow: 'none' }}
+              _focus={{ boxShadow: "none" }}
             >
               Music
             </Link>
@@ -160,7 +160,7 @@ const Page = () => {
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<IoLogoGithub />}
-                  _focus={{ boxShadow: 'none' }}
+                  _focus={{ boxShadow: "none" }}
                 >
                   afkdev8 (mr.infinidy)
                 </Button>
@@ -175,7 +175,7 @@ const Page = () => {
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<IoLogoYoutube />}
-                  _focus={{ boxShadow: 'none' }}
+                  _focus={{ boxShadow: "none" }}
                 >
                   YouTube
                 </Button>
@@ -190,7 +190,7 @@ const Page = () => {
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<IoLogoLinkedin />}
-                  _focus={{ boxShadow: 'none' }}
+                  _focus={{ boxShadow: "none" }}
                 >
                   linkedIn
                 </Button>
@@ -202,7 +202,7 @@ const Page = () => {
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<IoLogoEuro />}
-                  _focus={{ boxShadow: 'none' }}
+                  _focus={{ boxShadow: "none" }}
                 >
                   Buy me a coffee
                 </Button>
@@ -214,7 +214,7 @@ const Page = () => {
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<IoMail />}
-                  _focus={{ boxShadow: 'none' }}
+                  _focus={{ boxShadow: "none" }}
                 >
                   afkdev8@gmail.com
                 </Button>
@@ -231,7 +231,7 @@ const Page = () => {
         </Section>
       </Container4k>
     </Layout>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
