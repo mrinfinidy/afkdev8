@@ -6,9 +6,7 @@ export const Title = ({
     children
 }: any) => (
     <Box>
-        <NextLink href="/posts">
-            <Link>Posts</Link>
-        </NextLink>
+        <Link as={NextLink} href="/posts">Posts</Link>
         <span>
             &nbsp;
             <ChevronRightIcon />

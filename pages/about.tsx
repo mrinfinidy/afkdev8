@@ -16,22 +16,18 @@ const About = () => (
         </Heading>
         <BulletSection>
           <BulletPoint>
-            <NextLink href="https://www.instagram.com/marliscuts/" passHref={true}>
-              <Link target="_blank" _focus={{ boxShadow: 'none' }}>
+            <Link as={NextLink} href="https://www.instagram.com/marliscuts/" target="_blank" _focus={{ boxShadow: 'none' }}>
                 &#64;marliscuts
-              </Link>
-            </NextLink>
+            </Link>
           </BulletPoint>
           <br></br>
           Thank you Marlis for designing my beautiful logo ♥
         </BulletSection>
         <BulletSection>
           <BulletPoint>
-            <NextLink href="https://www.craftz.dog/" passHref={true}>
-              <Link target="_blank" _focus={{ boxShadow: 'none' }}>
+            <Link as={NextLink} href="https://www.craftz.dog/" target="_blank" _focus={{ boxShadow: 'none' }}>
                 &#64;craftzdog
-              </Link>
-            </NextLink>
+            </Link>
           </BulletPoint>
           <br></br>
           Thank you for your amazing video guide. I have used it as a
@@ -39,11 +35,9 @@ const About = () => (
         </BulletSection>
         <BulletSection>
           <BulletPoint>
-            <NextLink href="https://www.cgtrader.com/jkielr" passHref={true}>
-                <Link target="_blank" _focus={{ boxShadow: 'none' }}>
+            <Link as={NextLink} href="https://www.cgtrader.com/jkielr" target="_blank" _focus={{ boxShadow: 'none' }}>
                   Jesse Ragos
-                </Link>
-            </NextLink>
+            </Link>
           </BulletPoint>
           <br></br>
           Thank you for your cute Totoro 3d model.
@@ -54,11 +48,9 @@ const About = () => (
         <Heading as="h3" fontSize={20} mb={4}>
           View Source
         </Heading>
-        <NextLink href="https://github.com/mrinfinidy/afkdev8" passHref={true}>
-          <Link target="_blank" _focus={{ boxShadow: 'none' }}>
+        <Link as={NextLink} href="https://github.com/mrinfinidy/afkdev8" target="_blank" _focus={{ boxShadow: 'none' }}>
             Source Code <ExternalLinkIcon mx="2px"/>
-          </Link>
-        </NextLink>
+        </Link>
       </Section>
     </Container4k>
   </Layout>

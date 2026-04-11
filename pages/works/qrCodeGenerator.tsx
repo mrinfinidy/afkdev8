@@ -1,10 +1,19 @@
-import { Link, List, ListItem } from "@chakra-ui/react";
+import {
+  Link,
+  List,
+  ListItem,
+  SimpleGrid,
+  useColorMode,
+} from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Title, WorkImage, Meta } from "../../components/work";
 import P from "../../components/paragraph";
 import Layout from "../../components/layouts/article";
 import Container4k from "../../components/layouts/container";
-import { useColorMode } from "@chakra-ui/react";
+import { GridItem } from "../../components/grid-item";
+import qrCodeLight from "../../public/images/works/qrCodeGenerator/qrcodeAfkdev8Light.png";
+import qrCodeDark from "../../public/images/works/qrCodeGenerator/qrcodeAfkdev8Dark.png";
+import qrCodeCat from "../../public/images/works/qrCodeGenerator/qrcodeCat.png";
 
 const Work = () => {
   const { colorMode } = useColorMode();
@@ -27,36 +36,35 @@ const Work = () => {
           life.
         </P>
 
-        {colorMode === "light" ? (
-          <WorkImage
-            src="/images/works/qrCodeGenerator/qrcodeAfkdev8Light.png"
-            alt="YouTube Quick Search Chrome Preview"
-          />
-        ) : (
-          <WorkImage
-            src="/images/works/qrCodeGenerator/qrcodeAfkdev8Dark.png"
-            alt="YouTube Quick Search Chrome Preview"
-          />
-        )}
+        <SimpleGrid columns={[1, 1, 2]} gap={6} my={4}>
+          {colorMode === "light" ? (
+            <GridItem
+              title="afkdev8"
+              thumbnail={qrCodeLight}
+              href="/images/works/qrCodeGenerator/qrcodeAfkdev8Light.png"
+            ></GridItem>
+          ) : (
+            <GridItem
+              title="afkdev8"
+              thumbnail={qrCodeDark}
+              href="/images/works/qrCodeGenerator/qrcodeAfkdev8Dark.png"
+            ></GridItem>
+          )}
+          <GridItem
+            title="Cat"
+            thumbnail={qrCodeCat}
+            href="/images/works/qrCodeGenerator/qrcodeCat.png"
+          ></GridItem>
+        </SimpleGrid>
         <List ml={4} my={4}>
           <ListItem>
-            <Meta>Website</Meta>
-            <Link
-              href="https://chrome.google.com/webstore/detail/youtube-quick-search/algmmcbdjmplgjmligafamelebkahfhh?hl=en"
-              target="_blank"
-              _focus={{ boxShadow: "none" }}
-            >
-              Install from Chrome web store <ExternalLinkIcon mx="2px" />
-            </Link>
-          </ListItem>
-          <ListItem>
             <Meta>Platform</Meta>
-            <span>Chrome browser</span>
+            <span>Linux, macOS, Windows</span>
           </ListItem>
           <ListItem>
             <Meta>Source</Meta>
             <Link
-              href="https://github.com/mrinfinidy/YouTubeSearch"
+              href="https://github.com/mrinfinidy/qrcode-pretty"
               target="_blank"
               _focus={{ boxShadow: "none" }}
             >
