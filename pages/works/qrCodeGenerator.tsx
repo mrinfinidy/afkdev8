@@ -1,4 +1,5 @@
 import {
+  Badge,
   Link,
   List,
   ListItem,
@@ -6,7 +7,7 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Title, WorkImage, Meta } from "../../components/work";
+import { Title, Meta } from "../../components/work";
 import P from "../../components/paragraph";
 import Layout from "../../components/layouts/article";
 import Container4k from "../../components/layouts/container";
@@ -21,7 +22,9 @@ const Work = () => {
   return (
     <Layout title="">
       <Container4k>
-        <Title>QR Code Pretty</Title>
+        <Title>
+          QR Code Pretty &nbsp;<Badge>2026-present</Badge>
+        </Title>
         <P>
           This project started as a tool I built for work. I needed to create
           company branded QR codes to encode URLs. But the tools i found for my
