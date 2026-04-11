@@ -132,7 +132,7 @@ const Page = () => {
           </BulletSection>
           <BulletSection>
             <BulletPoint>2026</BulletPoint>
-            Release QR Code Pretty.
+            Released QR Code Pretty.
           </BulletSection>
         </Section>
 
